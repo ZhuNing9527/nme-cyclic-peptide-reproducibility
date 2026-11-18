@@ -1,0 +1,20 @@
+cff-version: 1.5.0
+message: If you use this reproducibility software and data, please cite this repository.
+type: software
+title: NMe cyclic peptide reproducibility
+authors:
+- name: ZhuNing9527
+  website: https://github.com/ZhuNing9527
+repository-code: https://github.com/ZhuNing9527/nme-cyclic-peptide-reproducibility
+url: https://github.com/ZhuNing9527/nme-cyclic-peptide-reproducibility
+version: 1.5.0
+abstract: Reproducibility materials for A Backbone-Dependent Torsion Correction for N-Methylated
+  Cyclic Pentaalanines, manuscript v3.0. Release v1.5.0 preserves the original matched Fourier fit,
+  tri-NMe model inputs, REST2 implementation and derived-endpoint checks, and adds independent
+  Ala validation, retrospective Val transfer, original acquisition source, native inputs for all three peptides and numerical figure-source data.
+keywords:
+- N-methylated cyclic peptides
+- torsion correction
+- Fourier models
+- REST2
+- OpenMM
