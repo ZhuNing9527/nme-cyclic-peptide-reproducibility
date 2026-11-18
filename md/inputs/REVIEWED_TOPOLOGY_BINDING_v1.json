@@ -1,0 +1,713 @@
+{
+  "Context_created": false,
+  "N_methylated_residues": [
+    1,
+    2,
+    5
+  ],
+  "OpenMM_imported": false,
+  "bonds": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      24
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      28
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      4,
+      29
+    ],
+    [
+      4,
+      30
+    ],
+    [
+      4,
+      31
+    ],
+    [
+      5,
+      32
+    ],
+    [
+      5,
+      33
+    ],
+    [
+      5,
+      34
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      7,
+      35
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      10,
+      36
+    ],
+    [
+      10,
+      37
+    ],
+    [
+      10,
+      38
+    ],
+    [
+      11,
+      39
+    ],
+    [
+      11,
+      40
+    ],
+    [
+      11,
+      41
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      12,
+      42
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      13,
+      16
+    ],
+    [
+      13,
+      43
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      14,
+      17
+    ],
+    [
+      16,
+      44
+    ],
+    [
+      16,
+      45
+    ],
+    [
+      16,
+      46
+    ],
+    [
+      17,
+      18
+    ],
+    [
+      17,
+      47
+    ],
+    [
+      18,
+      19
+    ],
+    [
+      18,
+      21
+    ],
+    [
+      18,
+      48
+    ],
+    [
+      19,
+      20
+    ],
+    [
+      19,
+      22
+    ],
+    [
+      21,
+      49
+    ],
+    [
+      21,
+      50
+    ],
+    [
+      21,
+      51
+    ],
+    [
+      22,
+      23
+    ],
+    [
+      22,
+      27
+    ],
+    [
+      23,
+      24
+    ],
+    [
+      23,
+      26
+    ],
+    [
+      23,
+      52
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      26,
+      53
+    ],
+    [
+      26,
+      54
+    ],
+    [
+      26,
+      55
+    ],
+    [
+      27,
+      56
+    ],
+    [
+      27,
+      57
+    ],
+    [
+      27,
+      58
+    ]
+  ],
+  "bound_restraint_ids": [
+    "TIERA_JACS4_T13_R01",
+    "TIERA_JACS4_T13_R02",
+    "TIERA_JACS4_T13_R03",
+    "TIERA_JACS4_T13_R04",
+    "TIERA_JACS4_T13_R05",
+    "TIERA_JACS4_T13_R06",
+    "TIERA_JACS4_T13_R07",
+    "TIERA_JACS4_T13_R08",
+    "TIERA_JACS4_T13_R09",
+    "TIERA_JACS4_T13_R10",
+    "TIERA_JACS4_T13_R11",
+    "TIERA_JACS4_T13_R12",
+    "TIERA_JACS4_T13_R13",
+    "TIERA_JACS4_T13_R14",
+    "TIERA_JACS4_T13_R15",
+    "TIERA_JACS4_T13_R16",
+    "TIERA_JACS4_T13_R17",
+    "TIERA_JACS4_T13_R18",
+    "TIERA_JACS4_T13_R19",
+    "TIERA_JACS4_T13_R20"
+  ],
+  "carbon_proxies_not_methyl_hydrogen_group_averages": true,
+  "chemical_graph_checked_independently_of_ROE_distances": true,
+  "particle_masses_and_solute_graph_equal_between_arms": true,
+  "physical_system_xml_sha256": {
+    "CONTROL": "ff286a83199241abd9cf38b42e70fbc633d10fc89b9f1c5f9a646d5e28f31cfc",
+    "TEST": "03de1af8aaee6582de98b4c7a33ed21134ae6b474d58faab377c8eeee172ee00"
+  },
+  "residues": [
+    {
+      "C": 2,
+      "CA": 1,
+      "CN_proxy": 5,
+      "Cbeta_hydrogens_not_averaged": [
+        29,
+        30,
+        31
+      ],
+      "Cbeta_proxy": 4,
+      "HN": null,
+      "Halpha": 28,
+      "N": 0,
+      "N_methyl_hydrogens_not_averaged": [
+        32,
+        33,
+        34
+      ],
+      "O": 3,
+      "residue_index": 1
+    },
+    {
+      "C": 8,
+      "CA": 7,
+      "CN_proxy": 11,
+      "Cbeta_hydrogens_not_averaged": [
+        36,
+        37,
+        38
+      ],
+      "Cbeta_proxy": 10,
+      "HN": null,
+      "Halpha": 35,
+      "N": 6,
+      "N_methyl_hydrogens_not_averaged": [
+        39,
+        40,
+        41
+      ],
+      "O": 9,
+      "residue_index": 2
+    },
+    {
+      "C": 14,
+      "CA": 13,
+      "CN_proxy": null,
+      "Cbeta_hydrogens_not_averaged": [
+        44,
+        45,
+        46
+      ],
+      "Cbeta_proxy": 16,
+      "HN": 42,
+      "Halpha": 43,
+      "N": 12,
+      "O": 15,
+      "residue_index": 3
+    },
+    {
+      "C": 19,
+      "CA": 18,
+      "CN_proxy": null,
+      "Cbeta_hydrogens_not_averaged": [
+        49,
+        50,
+        51
+      ],
+      "Cbeta_proxy": 21,
+      "HN": 47,
+      "Halpha": 48,
+      "N": 17,
+      "O": 20,
+      "residue_index": 4
+    },
+    {
+      "C": 24,
+      "CA": 23,
+      "CN_proxy": 27,
+      "Cbeta_hydrogens_not_averaged": [
+        53,
+        54,
+        55
+      ],
+      "Cbeta_proxy": 26,
+      "HN": null,
+      "Halpha": 52,
+      "N": 22,
+      "N_methyl_hydrogens_not_averaged": [
+        56,
+        57,
+        58
+      ],
+      "O": 25,
+      "residue_index": 5
+    }
+  ],
+  "restraint_atom_pairs_0based": [
+    [
+      4,
+      28
+    ],
+    [
+      5,
+      28
+    ],
+    [
+      5,
+      52
+    ],
+    [
+      26,
+      52
+    ],
+    [
+      27,
+      52
+    ],
+    [
+      27,
+      48
+    ],
+    [
+      48,
+      47
+    ],
+    [
+      21,
+      48
+    ],
+    [
+      21,
+      47
+    ],
+    [
+      47,
+      42
+    ],
+    [
+      43,
+      42
+    ],
+    [
+      16,
+      47
+    ],
+    [
+      16,
+      43
+    ],
+    [
+      16,
+      42
+    ],
+    [
+      35,
+      42
+    ],
+    [
+      10,
+      42
+    ],
+    [
+      10,
+      35
+    ],
+    [
+      11,
+      28
+    ],
+    [
+      11,
+      47
+    ],
+    [
+      11,
+      42
+    ]
+  ],
+  "restraint_count": 20,
+  "semantic_to_atom_index_0based": {
+    "1:CN": 5,
+    "1:Cβ": 4,
+    "1:Hα": 28,
+    "2:CN": 11,
+    "2:Cβ": 10,
+    "2:Hα": 35,
+    "3:Cβ": 16,
+    "3:HN": 42,
+    "3:Hα": 43,
+    "4:Cβ": 21,
+    "4:HN": 47,
+    "4:Hα": 48,
+    "5:CN": 27,
+    "5:Cβ": 26,
+    "5:Hα": 52
+  },
+  "solute_bonds": 59,
+  "solute_formula": "C18H31N5O5",
+  "solute_particles": 59,
+  "total_particles": 4939,
+  "trajectories_read": false,
+  "unwrap_tree_parent_child": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      24
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      28
+    ],
+    [
+      5,
+      32
+    ],
+    [
+      5,
+      33
+    ],
+    [
+      5,
+      34
+    ],
+    [
+      24,
+      23
+    ],
+    [
+      24,
+      25
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      4,
+      29
+    ],
+    [
+      4,
+      30
+    ],
+    [
+      4,
+      31
+    ],
+    [
+      23,
+      22
+    ],
+    [
+      23,
+      26
+    ],
+    [
+      23,
+      52
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      22,
+      19
+    ],
+    [
+      22,
+      27
+    ],
+    [
+      26,
+      53
+    ],
+    [
+      26,
+      54
+    ],
+    [
+      26,
+      55
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      7,
+      35
+    ],
+    [
+      11,
+      39
+    ],
+    [
+      11,
+      40
+    ],
+    [
+      11,
+      41
+    ],
+    [
+      19,
+      18
+    ],
+    [
+      19,
+      20
+    ],
+    [
+      27,
+      56
+    ],
+    [
+      27,
+      57
+    ],
+    [
+      27,
+      58
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      10,
+      36
+    ],
+    [
+      10,
+      37
+    ],
+    [
+      10,
+      38
+    ],
+    [
+      18,
+      17
+    ],
+    [
+      18,
+      21
+    ],
+    [
+      18,
+      48
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      12,
+      42
+    ],
+    [
+      17,
+      14
+    ],
+    [
+      17,
+      47
+    ],
+    [
+      21,
+      49
+    ],
+    [
+      21,
+      50
+    ],
+    [
+      21,
+      51
+    ],
+    [
+      13,
+      16
+    ],
+    [
+      13,
+      43
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      16,
+      44
+    ],
+    [
+      16,
+      45
+    ],
+    [
+      16,
+      46
+    ]
+  ],
+  "version": "402EC_REVIEWED_CYCLIC_PENTAALANINE_ROE_BINDING_V1"
+}

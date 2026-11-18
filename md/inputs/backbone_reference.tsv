@@ -1,0 +1,6 @@
+residue_index	residue_name	n_methylated_at_residue	phi_deg	psi_deg	omega_state
+1	D-Ala1	True	126.26	-69.14	t
+2	L-Ala2	True	-105.75	-83.69	t
+3	L-Ala3	False	-81.68	-53.34	t
+4	L-Ala4	False	-108.64	102.86	t
+5	L-Ala5	True	57.92	70.38	t
