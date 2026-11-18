@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "source_archive_sha256": "2444070f1762639ad84fcdee853b3527e4dc4cacce854dea3d3aa377c5fda3c4",
+  "coefficient_sha256": "45ea3fae8a60a01f490cb95baeeb42fc9510e1d1d31004d266f0b415b8d9e29e",
+  "protocol_sha256": "8f7b500f98b13b27ddac4fb536b0c3883c298747820465c432ea4e310e5de17a",
+  "verified_archived_source_files": 932,
+  "historical_final_freeze_entries_verified": 27,
+  "missing_historical_freeze_targets": [],
+  "topology_sha256": "d05ec43286f24efdc52f003595d47a355f59080537971a0aed6c819dc491851e",
+  "formal_RESP_charge_max_difference_e": 2.134746934778775e-09,
+  "QM_and_M0_jobs_verified": 72,
+  "maximum_four_dihedral_constraint_error_deg": 9.451183302644495e-06,
+  "maximum_bond_length_A": 1.564957458593195,
+  "max_M0_restart_QM_coordinate_difference_A": 4.9991339956534375e-08,
+  "raw_M0_total_table_max_difference_kcal_mol": 0.0,
+  "raw_M0_component_table_max_difference_kcal_mol": 1.0658141036401503e-14,
+  "alpha_chirality_preserved": true,
+  "bound_torsion_indices_0based": {
+    "phi": [
+      1,
+      3,
+      5,
+      9
+    ],
+    "psi": [
+      3,
+      5,
+      9,
+      11
+    ],
+    "omega": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "chi1": [
+      3,
+      5,
+      6,
+      7
+    ]
+  },
+  "new_QM": false,
+  "new_MD": false,
+  "refit": false,
+  "new_test_energy_offset_fitted": false,
+  "assessment_designation": "Retrospective transfer of frozen coefficients to historical NMe-Val data",
+  "context_trans_contrast_scope": "Amide increment J; nominal-angle A term cancels within each context",
+  "common_reference_scope": "Full correction A+J, referenced to one predetermined physical Val geometry; reference uncertainty held fixed",
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261118,
+  "bootstrap_unit": "Backbone x chi1 context; original omega values remain together; conditional on this fixed small design",
+  "main_metrics": [
+    {
+      "contrast": "context_trans_increment",
+      "panel": "primary54",
+      "subset": "ALL",
+      "n_nonreference": 45,
+      "n_context_clusters": 9,
+      "M0_RMSE_kcal_mol": 4.422118171170545,
+      "pairwise_RMSE_kcal_mol": 3.1163158002234614,
+      "joint_RMSE_kcal_mol": 1.8276757953292888,
+      "pairwise_minus_joint_RMSE_kcal_mol": 1.2886400048941726,
+      "relative_RMSE_reduction_pct": 41.351393360126345,
+      "paired_cluster_CI95_low_kcal_mol": 0.6674431613690761,
+      "paired_cluster_CI95_high_kcal_mol": 1.8568798707391416,
+      "joint_closer_count": 37
+    },
+    {
+      "contrast": "context_trans_increment",
+      "panel": "alphaL18",
+      "subset": "ALL",
+      "n_nonreference": 15,
+      "n_context_clusters": 3,
+      "M0_RMSE_kcal_mol": 5.635118149904647,
+      "pairwise_RMSE_kcal_mol": 3.719710070270434,
+      "joint_RMSE_kcal_mol": 1.3779833724714208,
+      "pairwise_minus_joint_RMSE_kcal_mol": 2.341726697799013,
+      "relative_RMSE_reduction_pct": 62.954548971844,
+      "paired_cluster_CI95_low_kcal_mol": 2.1797592220788244,
+      "paired_cluster_CI95_high_kcal_mol": 2.6322034256733895,
+      "joint_closer_count": 13
+    },
+    {
+      "contrast": "common_AR_t_p180_full_correction",
+      "panel": "primary54",
+      "subset": "ALL",
+      "n_nonreference": 53,
+      "n_context_clusters": 9,
+      "M0_RMSE_kcal_mol": 5.875544225157416,
+      "pairwise_RMSE_kcal_mol": 4.442144736206958,
+      "joint_RMSE_kcal_mol": 2.5038715051648017,
+      "pairwise_minus_joint_RMSE_kcal_mol": 1.9382732310421567,
+      "relative_RMSE_reduction_pct": 43.63372528688028,
+      "paired_cluster_CI95_low_kcal_mol": 1.5265272376377732,
+      "paired_cluster_CI95_high_kcal_mol": 2.182739880539127,
+      "joint_closer_count": 47
+    },
+    {
+      "contrast": "common_AR_t_p180_full_correction",
+      "panel": "alphaL18",
+      "subset": "ALL",
+      "n_nonreference": 18,
+      "n_context_clusters": 3,
+      "M0_RMSE_kcal_mol": 5.900913148246233,
+      "pairwise_RMSE_kcal_mol": 7.203586496064856,
+      "joint_RMSE_kcal_mol": 5.083866521384293,
+      "pairwise_minus_joint_RMSE_kcal_mol": 2.1197199746805637,
+      "relative_RMSE_reduction_pct": 29.425897444814677,
+      "paired_cluster_CI95_low_kcal_mol": 2.0772952800400146,
+      "paired_cluster_CI95_high_kcal_mol": 2.2036708666848077,
+      "joint_closer_count": 15
+    }
+  ],
+  "precision_sensitivities": [
+    {
+      "contrast": "context_trans_increment",
+      "panel": "primary54",
+      "alternative": "achieved_angle",
+      "pairwise": 3.116315820747788,
+      "joint": 1.827675973042645,
+      "max_RMSE_shift_kcal_mol": 1.7771335625305085e-07
+    },
+    {
+      "contrast": "context_trans_increment",
+      "panel": "primary54",
+      "alternative": "component_sum",
+      "pairwise": 3.116302513123423,
+      "joint": 1.8276509759180557,
+      "max_RMSE_shift_kcal_mol": 2.4819411233112376e-05
+    },
+    {
+      "contrast": "context_trans_increment",
+      "panel": "alphaL18",
+      "alternative": "achieved_angle",
+      "pairwise": 3.719710604387028,
+      "joint": 1.3779833152336105,
+      "max_RMSE_shift_kcal_mol": 5.341165940642156e-07
+    },
+    {
+      "contrast": "context_trans_increment",
+      "panel": "alphaL18",
+      "alternative": "component_sum",
+      "pairwise": 3.7196371882865393,
+      "joint": 1.3780086893960197,
+      "max_RMSE_shift_kcal_mol": 7.288198389465705e-05
+    },
+    {
+      "contrast": "common_AR_t_p180_full_correction",
+      "panel": "primary54",
+      "alternative": "achieved_angle",
+      "pairwise": 4.442144718252513,
+      "joint": 2.5038716591541337,
+      "max_RMSE_shift_kcal_mol": 1.5398933195243103e-07
+    },
+    {
+      "contrast": "common_AR_t_p180_full_correction",
+      "panel": "primary54",
+      "alternative": "component_sum",
+      "pairwise": 4.442059119726953,
+      "joint": 2.5038075414496666,
+      "max_RMSE_shift_kcal_mol": 8.561648000515731e-05
+    },
+    {
+      "contrast": "common_AR_t_p180_full_correction",
+      "panel": "alphaL18",
+      "alternative": "achieved_angle",
+      "pairwise": 7.203586911468577,
+      "joint": 5.083866922356521,
+      "max_RMSE_shift_kcal_mol": 4.1540372031079187e-07
+    },
+    {
+      "contrast": "common_AR_t_p180_full_correction",
+      "panel": "alphaL18",
+      "alternative": "component_sum",
+      "pairwise": 7.203517042667991,
+      "joint": 5.083816043015934,
+      "max_RMSE_shift_kcal_mol": 6.945339686570406e-05
+    }
+  ]
+}

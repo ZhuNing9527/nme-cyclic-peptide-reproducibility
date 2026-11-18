@@ -1,0 +1,24 @@
+{
+  "training_sha256": "083a15a2931590d8452be96f1f7886c24f00f1cce93f30c71817b15c6d576ad0",
+  "scoring_archive_sha256": "7c1e8b8788029569473c8bad61e316c0b50e60f0328830318ce1f6e729d9341e",
+  "scoring_member": "frozen/NMEALA_M4_JOINT_TWO_WINNER_VALIDATION144_POINTWISE_v1.tsv",
+  "scoring_member_sha256": "4a0bfa5232d666383f86d510b2ce38069f6c00562750c2511d6f2b49072ba498",
+  "n_train": 246,
+  "n_score": 144,
+  "training_scoring_state_overlap": 0,
+  "training_scoring_periodic_angle_overlap": 0,
+  "K": 4,
+  "lambda": 100.0,
+  "rcond": 1e-12,
+  "full_basis_penalty_median": 380.5,
+  "training_R_mean_kcal_mol": -335817.1349345352,
+  "joint_coefficients": 729,
+  "pairwise_coefficients": 217,
+  "max_reproduced_joint_difference_kcal_mol": 0.0,
+  "pairwise_restriction": "Keep full A; keep J when phi index or psi index is the constant; inherit full-basis penalty scale.",
+  "scoring_designation": "Held out from coefficient fitting, but previously used for representation selection; retrospective comparison.",
+  "training_RMSE_kcal_mol": {
+    "joint": 0.7008713458963947,
+    "pairwise": 1.6902009547676906
+  }
+}

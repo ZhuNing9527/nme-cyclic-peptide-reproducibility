@@ -1,0 +1,9 @@
+contrast	panel	alternative	pairwise	joint	max_RMSE_shift_kcal_mol
+context_trans_increment	primary54	achieved_angle	3.116315820747788	1.827675973042645	1.7771335625305085e-07
+context_trans_increment	primary54	component_sum	3.116302513123423	1.8276509759180557	2.4819411233112376e-05
+context_trans_increment	alphaL18	achieved_angle	3.719710604387028	1.3779833152336105	5.341165940642156e-07
+context_trans_increment	alphaL18	component_sum	3.7196371882865393	1.3780086893960197	7.288198389465705e-05
+common_AR_t_p180_full_correction	primary54	achieved_angle	4.442144718252513	2.5038716591541337	1.5398933195243103e-07
+common_AR_t_p180_full_correction	primary54	component_sum	4.442059119726953	2.5038075414496666	8.561648000515731e-05
+common_AR_t_p180_full_correction	alphaL18	achieved_angle	7.203586911468577	5.083866922356521	4.1540372031079187e-07
+common_AR_t_p180_full_correction	alphaL18	component_sum	7.203517042667991	5.083816043015934	6.945339686570406e-05

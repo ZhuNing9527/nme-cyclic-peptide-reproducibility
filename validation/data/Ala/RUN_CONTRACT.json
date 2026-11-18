@@ -1,0 +1,40 @@
+{
+  "version": "NME_CLEAN_HOLDOUT_QM_EXECUTION_V1.2",
+  "created_utc": "2026-11-17T18:45:20.725817+00:00",
+  "package": "/mnt/lab/zn/mem-perm/P0_starter_v1/07_nmeala_separability_pilot/13_joint_correction_development/NMe_QM_Holdout_Run_v1.2",
+  "design_protocol_sha256": "07de7124541d328c9a41b90007a3bac714404cfd432c3032f2ffe22b9882cb77",
+  "native_inputs_sha256": "0731234c335fef638c4435772ee94e87a0482939708de17bfbf4dd7f40349a0f",
+  "formal_resp_prmtop_sha256": "9b2c68fad482b03562a4b9c956dc57586bfc73384bb3a68b019e866c1275f5e6",
+  "runtime": {
+    "orca": {
+      "path": "/mnt/lab/zn/software/orca_6_1_1_linux_x86-64_shared_openmpi418_nodmrg/orca",
+      "sha256": "38b5f057452fef275c0a1b98d270ad03d0411dab70453820d1c678bd732f6c83"
+    },
+    "mpirun": {
+      "path": "/mnt/lab/zn/software/openmpi-4.1.8-local/bin/mpirun",
+      "sha256": "98208ee7654b64d4073525ccca2719c0ea6fc3beef371fede3f5847d26ed4959"
+    },
+    "pmemd": {
+      "path": "/home/dlab/software/pmemd24/bin/pmemd",
+      "sha256": "d86788a7e398f704c0a3f7e8c752a25ca3a7a56bd19cb602dfa8b80f790d1193"
+    }
+  },
+  "code_sha256": {
+    "run_holdout_qm.py": "4080b351b98eb4b235ad1d4f791f6c494f06d2d234174be3649b313a6b01d8c4",
+    "qm_geometry.py": "b11a8cdca1c51180b3cc80e8823867531a3cf3ab9667e49275fac9cb00be4cc5",
+    "holdout_common.py": "5bdc15ad9519cccb72388affe83e7377c1fabb1b025371fef033408911b5af97",
+    "prepare_holdout.py": "4abc7b956a5a04894f7a18305aadcf05a72634a35749d73d7f74e5a6dba19a34",
+    "score_holdout.py": "aff2f9f8691d5825f284efa28473279cabc3628b8a55f9983ee760e83d818ee7"
+  },
+  "resources": {
+    "concurrent_jobs": 1,
+    "orca_processes": 8,
+    "maxcore_MB_per_process": 1000,
+    "available_memory_MiB_at_qualification": 39915.9375
+  },
+  "n_main": 144,
+  "n_reserve": 24,
+  "MD": false,
+  "OpenMM_Context": false,
+  "GPU": false
+}

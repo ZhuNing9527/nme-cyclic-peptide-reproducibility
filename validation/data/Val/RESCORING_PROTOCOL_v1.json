@@ -1,0 +1,34 @@
+{
+  "version": "NMEVAL_FROZEN_MODEL_RETROSPECTIVE_RESCORING_V1",
+  "data_archive_sha256": "2444070f1762639ad84fcdee853b3527e4dc4cacce854dea3d3aa377c5fda3c4",
+  "frozen_coefficients_sha256": "45ea3fae8a60a01f490cb95baeeb42fc9510e1d1d31004d266f0b415b8d9e29e",
+  "current_model_result_seen_when_recording_this_protocol": false,
+  "design": "Use every available original 54-state primary point and 18-state alphaL point; report panels separately.",
+  "assessment_designation": "Retrospective cross-residue assessment of frozen NMe-Ala models; the old alphaL prospective designation applies to the historical omega-only predictor.",
+  "fit_models": false,
+  "fit_or_optimize_test_offset": false,
+  "Hartree_to_kcal_mol": 627.509474,
+  "main_energy_source": "Archived formal m0_total_kcal_mol after raw-output reproduction; nine-component sum used as a precision sensitivity.",
+  "main_angle_source": "Original fixed target angles, after independent binding and achieved-angle checks; achieved-angle predictions used as sensitivity.",
+  "amide_increment_assessment": {
+    "reference": "omega=+180 within each original backbone/chi1 context",
+    "target": "[E_QM(omega)-E_M0(omega)] - [E_QM(180)-E_M0(180)]",
+    "model": "V(phi,psi,omega) - V(phi,psi,180), so the nominal-angle A term cancels; this directly tests the amide increment J.",
+    "score_nonreference_points_only": true,
+    "expected_primary_n": 45,
+    "expected_alphaL_n": 15
+  },
+  "full_correction_sensitivity": {
+    "reference_state_id": "AR_t_p180",
+    "target": "QM-minus-M0 residual differences relative to one predesignated common Val geometry",
+    "model": "Frozen full correction value differences relative to the same geometry",
+    "score_reference_point_itself": false,
+    "expected_primary_n": 53,
+    "expected_alphaL_n": 18
+  },
+  "stratification": "Always report all three predefined chi1 strata, and all backbone contexts.",
+  "uncertainty": "Optional paired context-cluster bootstrap; context is backbone x chi1, all five non-reference omega values resampled together. Intervals are conditional on this fixed small design.",
+  "QC": "Raw ORCA convergence/energies; raw PMEMD output; exact geometry source SHA; restart precision; all four achieved dihedrals; alpha chirality; topology/charge pins; original freeze hashes where bytes are available.",
+  "new_QM_or_MD": false,
+  "new_calculation_decision": "Existing-data rescoring only. New QM will not be triggered merely by an unfavorable current-model score."
+}

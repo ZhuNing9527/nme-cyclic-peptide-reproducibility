@@ -1,0 +1,32 @@
+{
+  "mode": "complete_independent_holdout",
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261117,
+  "protocol_sha256": "07de7124541d328c9a41b90007a3bac714404cfd432c3032f2ffe22b9882cb77",
+  "primary": {
+    "subset": "All geometries",
+    "n": 144,
+    "pairwise_RMSE_kcal_mol": 2.2995308675795303,
+    "joint_RMSE_kcal_mol": 1.9999951454111657,
+    "delta_RMSE_kcal_mol": 0.29953572216836455,
+    "RMSE_reduction_pct": 13.025949179088592,
+    "paired_CI95_low_kcal_mol": 0.15621237585055747,
+    "paired_CI95_high_kcal_mol": 0.4401812381260393,
+    "omega_stratified_CI95_low_kcal_mol": 0.1594900026261478,
+    "omega_stratified_CI95_high_kcal_mol": 0.44101154877186605,
+    "pairwise_MaxAbs_kcal_mol": 8.576224398857448,
+    "joint_MaxAbs_kcal_mol": 8.664293478475884,
+    "n_joint_closer": 93
+  },
+  "attempts": {
+    "n_attempted": 144,
+    "n_failed": 0,
+    "n_replaced_slots": 0
+  },
+  "low_energy_subset_available": true,
+  "input_hashes": {
+    "results": "11bc38200e7207198fa2e93d206e906441451c8b031197c4bd730fb0884c7842",
+    "attempt_log": "d3790ab91a7061fac1658db4dac3868ed1703a9fe378c9b3408cb439bd670900"
+  },
+  "no_model_fitting_or_holdout_recentring": true
+}
