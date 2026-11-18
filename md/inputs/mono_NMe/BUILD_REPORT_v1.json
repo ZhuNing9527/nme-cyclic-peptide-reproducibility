@@ -1,0 +1,66 @@
+{
+  "benchmark_id": "TIERA_JACS1",
+  "box_edge_nm": 4.0,
+  "charge_sum_e": 4.64321200877027e-07,
+  "constraints": 2961,
+  "contexts_created": 0,
+  "dmso_molecules": 489,
+  "dmso_original_prmtop_sha256": "d981ddbf22ba1c32f495a94db4700b0f8df22e1f9df7e4a42e56f8881403cfc1",
+  "hydrogen_mass_repartitioning": false,
+  "m4_pbc": true,
+  "m4_physical_sites": 1,
+  "m4_terms": 729,
+  "max_solvent_parameter_serialization_difference": 1.4392314284794594e-09,
+  "md_steps": 0,
+  "non_m4_forces_byte_identical": true,
+  "openmm_version": "8.4",
+  "packing": {
+    "closest_atom_pair_0based": [
+      3895,
+      4002
+    ],
+    "inter_molecule_pairs_below_1_95_A": 0,
+    "minimum_inter_molecule_distance_A": 2.194080733818378,
+    "periodic_minimum_image_checked": true
+  },
+  "parmed_version": "4.3.1",
+  "production": false,
+  "solute_atoms": 53,
+  "solute_fixed_packmol_coordinate_difference_A": 3.552713678800501e-15,
+  "solute_original_prmtop_sha256": "d0c85457069a20a44e096863fd6ae2376a5886b2b081a7e0b820b7e2fec8147e",
+  "solute_output_coordinate_difference_A": 3.552713678800501e-15,
+  "solute_parameter_audit": {
+    "angle": {
+      "count": 96,
+      "max_absolute_serialization_difference": 0.0
+    },
+    "bond": {
+      "count": 53,
+      "max_absolute_serialization_difference": 0.0
+    },
+    "constraint": {
+      "count": 0,
+      "max_absolute_serialization_difference": 0.0
+    },
+    "exception": {
+      "count": 280,
+      "max_absolute_serialization_difference": 1.7087432579998563e-09
+    },
+    "mass": {
+      "count": 53,
+      "max_absolute_serialization_difference": 0.0
+    },
+    "nb": {
+      "count": 53,
+      "max_absolute_serialization_difference": 0.0
+    },
+    "torsion": {
+      "count": 178,
+      "max_absolute_serialization_difference": 0.0
+    }
+  },
+  "solvent_copies_parameter_audited": 489,
+  "status": "BUILT_AND_PARAMETER_AUDITED",
+  "total_atoms": 4943,
+  "total_mass_Da": 38574.01800000235
+}
