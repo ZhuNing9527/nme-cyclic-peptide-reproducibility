@@ -1,0 +1,847 @@
+{
+  "release": "1.5.0",
+  "source_release": "1.4.1",
+  "source_zip_sha256": "47e388166f3cf12797c82d0207608cf60226afaf772f7e309850cae0784880cf",
+  "scientific_names": {
+    "mono_NMe": {
+      "legacy_id": "TIERA_JACS1 / JACS1",
+      "methylated_residues": [
+        1
+      ]
+    },
+    "di_NMe": {
+      "legacy_id": "TIERA_JACS3 / JACS3",
+      "methylated_residues": [
+        1,
+        5
+      ]
+    },
+    "tri_NMe": {
+      "legacy_id": "TIERA_JACS4 / JACS4",
+      "methylated_residues": [
+        1,
+        2,
+        5
+      ]
+    }
+  },
+  "original_scientific_archives": [
+    {
+      "source_id": "tri_nme_runtime_sources",
+      "description": "Original tri-NMe model, REST2 runtime and boxed starts",
+      "sha256": "979ac1b95907e324fbd4db6828f751e5fff35ceba64f23313e04128334e0fe89"
+    },
+    {
+      "source_id": "tri_nme_frozen_analysis",
+      "description": "Frozen tri-NMe endpoint and atom-binding source",
+      "sha256": "ece795c327e9d675474a5bfaa570f15814a93a144e0cf89341f9032fc48ab685"
+    },
+    {
+      "source_id": "tri_nme_contacts",
+      "description": "Existing tri-NMe contact analysis and representative structures",
+      "sha256": "cf3c2955114dfe99d7ec1e2b8eaa5d2e7eeee46b8efc1161541bca850e0370b0"
+    },
+    {
+      "source_id": "tri_nme_rmsd_and_projected_pmf",
+      "description": "Existing tri-NMe physical-state RMSD, torsion deviations and projected PMF",
+      "sha256": "8f5ab9837c8ad5289fc3dcf780703f63f4b1611d9e281592567b8e872ca51bba"
+    },
+    {
+      "source_id": "original_training_table",
+      "description": "Original 246-point training table including laboratory source fields",
+      "sha256": "083a15a2931590d8452be96f1f7886c24f00f1cce93f30c71817b15c6d576ad0"
+    },
+    {
+      "source_id": "original_scoring_bundle",
+      "description": "Frozen fragment scoring inputs and representation-selection records",
+      "sha256": "7c1e8b8788029569473c8bad61e316c0b50e60f0328830318ce1f6e729d9341e"
+    }
+  ],
+  "native_input_sources": [
+    {
+      "public_file": "acquisition/authorities/NMEALA_IDENTIFIABILITY_54STATE_R2SCAN_RESULTS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/12_nmeala_identifiability/03_fresh_qm/NMEALA_IDENTIFIABILITY_54STATE_R2SCAN_RESULTS_v1.tsv",
+      "source_collection": "old",
+      "sha256": "63296144924ddc382390a2a0548b32d2794ea9e30bf00fdd09614b6e4be1238c",
+      "transformation": "none"
+    },
+    {
+      "public_file": "acquisition/authorities/NMEALA_IDENTIFIABILITY_54STATE_SAME_GEOMETRY_M0_RESULTS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/12_nmeala_identifiability/04_same_geometry_m0/NMEALA_IDENTIFIABILITY_54STATE_SAME_GEOMETRY_M0_RESULTS_v1.tsv",
+      "source_collection": "old",
+      "sha256": "80f0c8a8b7a93ab13bec7b309431dbcd4351624c6edef90a92a04cb6d45f1ae3",
+      "transformation": "none"
+    },
+    {
+      "public_file": "acquisition/authorities/NMEALA_JOINT_144_INTERNAL_VALIDATION_MANIFEST_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/03_internal_validation_split/NMEALA_JOINT_144_INTERNAL_VALIDATION_MANIFEST_v1.tsv",
+      "source_collection": "old",
+      "sha256": "f93fc7c2b2348f1629ad41a9327d66618f90d46b31520062eed20bdf876f7f66",
+      "transformation": "none"
+    },
+    {
+      "public_file": "acquisition/authorities/NMEALA_JOINT_1566_ACQUISITION_POOL_MANIFEST_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/03_internal_validation_split/NMEALA_JOINT_1566_ACQUISITION_POOL_MANIFEST_v1.tsv",
+      "source_collection": "old",
+      "sha256": "42a64f2765a624a95a0c4a1e5a8af0cff57ed5b722be2237c4a7ffa98209bf3a",
+      "transformation": "none"
+    },
+    {
+      "public_file": "acquisition/authorities/NMEALA_JOINT_ACQUISITION_BENCHMARK_PRECOMMIT_FREEZE_v1.sha256",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/04_acquisition_benchmark_precommit/NMEALA_JOINT_ACQUISITION_BENCHMARK_PRECOMMIT_FREEZE_v1.sha256",
+      "source_collection": "old",
+      "sha256": "638bd46c98cb6d2dca725f3d7dca55322119f3de1b101194d518c3118852ff05",
+      "transformation": "none"
+    },
+    {
+      "public_file": "acquisition/authorities/NMEALA_JOINT_ACQUISITION_BENCHMARK_PRECOMMIT_v1.md",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/04_acquisition_benchmark_precommit/NMEALA_JOINT_ACQUISITION_BENCHMARK_PRECOMMIT_v1.md",
+      "source_collection": "old",
+      "sha256": "ade57d9e8d2e38033ac40292f5004018eb037d074dc438df586797930dc2dee7",
+      "transformation": "none"
+    },
+    {
+      "public_file": "acquisition/authorities/NMEALA_JOINT_ACQUISITION_BUDGETS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/04_acquisition_benchmark_precommit/NMEALA_JOINT_ACQUISITION_BUDGETS_v1.tsv",
+      "source_collection": "old",
+      "sha256": "1f93aef5fd339fb82e94142d0073ff0cd475ab878cf7ab799f482c48ed811555",
+      "transformation": "none"
+    },
+    {
+      "public_file": "acquisition/authorities/NMEALA_JOINT_MAXIMIN_192_SEQUENCE_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/04_acquisition_benchmark_precommit/NMEALA_JOINT_MAXIMIN_192_SEQUENCE_v1.tsv",
+      "source_collection": "old",
+      "sha256": "6b3aa06341f0c17fe21d2033d8c6ad50c99447ab3ef9e4ae2e7c9c005a1b45e4",
+      "transformation": "none"
+    },
+    {
+      "public_file": "acquisition/authorities/NMEALA_JOINT_RANDOM_192_SEQUENCE_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/04_acquisition_benchmark_precommit/NMEALA_JOINT_RANDOM_192_SEQUENCE_v1.tsv",
+      "source_collection": "old",
+      "sha256": "37d1b5aaa23f36fc8644b37905b3f49563294e5ebd7bb82f0e1a32d2c9c321b2",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/mono_NMe/BUILD_REPORT_v1.json",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS1/build/BUILD_REPORT_v1.json",
+      "source_collection": "old",
+      "sha256": "ff0079b790a0df9f04d85db0d8d93cc24692ccd9d8c8b1863f907078716f5fb0",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/mono_NMe/M0.xml",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS1/build/CONTROL.xml",
+      "source_collection": "old",
+      "sha256": "938724a9db417f89369e861fb5294efc3a66fd409f72412c5aa602b0be08fdf8",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/mono_NMe/SOLUTE_GEOMETRY_v1.json",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS1/build/SOLUTE_GEOMETRY_v1.json",
+      "source_collection": "old",
+      "sha256": "1132d55ebdc6bddc2851a9efbc063db9d6ef721f2eb1327e6d68dbc84cbdf438",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/mono_NMe/Full.xml",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS1/build/TEST.xml",
+      "source_collection": "old",
+      "sha256": "d9c02b173ca526bb714e528d6ae8829e0bad607158ecd39fe6eb24b85fd07728",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/di_NMe/BUILD_REPORT_v1.json",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS3/build/BUILD_REPORT_v1.json",
+      "source_collection": "new",
+      "sha256": "6ee5da850fb51e786b0011c7b5310522f114e54f850e567f78be4256e3a738f2",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/di_NMe/M0.xml",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS3/build/CONTROL.xml",
+      "source_collection": "new",
+      "sha256": "08fb806163332b689f331b298cbd70589de589c02d557b0385b788ce4da39fa9",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/di_NMe/SOLUTE_GEOMETRY_v1.json",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS3/build/SOLUTE_GEOMETRY_v1.json",
+      "source_collection": "new",
+      "sha256": "1132d55ebdc6bddc2851a9efbc063db9d6ef721f2eb1327e6d68dbc84cbdf438",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/di_NMe/Full.xml",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS3/build/TEST.xml",
+      "source_collection": "new",
+      "sha256": "257eb2c1ba86b3318e3d8713771986bb734d6d8ba1a57eb4ae05c0132a383a30",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/tri_NMe_BUILD_REPORT_v1.json",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS4/build/BUILD_REPORT_v1.json",
+      "source_collection": "new",
+      "sha256": "9cdfefe04ab6571ba77072a45be6b3ac7fad6d98cbd0100b0230670484f6f049",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/M0.xml",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS4/build/CONTROL.xml",
+      "source_collection": "new",
+      "sha256": "ff286a83199241abd9cf38b42e70fbc633d10fc89b9f1c5f9a646d5e28f31cfc",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/Full.xml",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/20r_post_m4_dmso_solvation_and_short_md_v1/systems/TIERA_JACS4/build/TEST.xml",
+      "source_collection": "new",
+      "sha256": "03de1af8aaee6582de98b4c7a33ed21134ae6b474d58faab377c8eeee172ee00",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/production_source_v1.zip",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/21l_post_m4_final_production_protocol_freeze_v2/402CX_v2_FINAL_PRODUCTION_PROTOCOL_FREEZE_v1.sha256",
+      "source_collection": "new",
+      "sha256": "937c290d1f2b44c1d7e6aa998f4bd8885e5b75d4245c471c340aff7a6a6e917f",
+      "transformation": "none",
+      "archive_member": "production_source/authorities/formal_production_protocol_freeze_v1.sha256"
+    },
+    {
+      "public_file": "md/production_source_v1.zip",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/21l_post_m4_final_production_protocol_freeze_v2/402CX_v2_FINAL_PRODUCTION_PROTOCOL_v1.json",
+      "source_collection": "new",
+      "sha256": "960dc16d81fbd58df2cda17a9d9d91a5dc70c556a08f883a94b704ea38a451ac",
+      "transformation": "none",
+      "archive_member": "production_source/authorities/formal_production_protocol_v1.json"
+    },
+    {
+      "public_file": "md/production_source_v1.zip",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/21l_post_m4_final_production_protocol_freeze_v2/402CX_v2_PRODUCTION_STARTS_AND_SEEDS_v1.tsv",
+      "source_collection": "new",
+      "sha256": "7d62289519fde4a23a2fe8954c13566aca4ba97bef0af7eb839cd7c69e5593fc",
+      "transformation": "none",
+      "archive_member": "production_source/authorities/formal_production_starts_and_seeds_v1.tsv"
+    },
+    {
+      "public_file": "md/production_source_v1.zip",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231aq_original_server_independent_formal_authorization_R1_v1/402EA_R1_ORIGINAL_SERVER_DEPLOYMENT_AMENDMENT_v1.json",
+      "source_collection": "new",
+      "sha256": "d61ca6b94faa29a7764b0e2d1db4f39aff6339ff79c4ea4d0b657a88ee26cdcf",
+      "transformation": "none",
+      "archive_member": "production_source/authorities/original_deployment_amendment_r1_v1.json"
+    },
+    {
+      "public_file": "md/production_source_v1.zip",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231aq_original_server_independent_formal_authorization_R1_v1/402EA_R1_PRELAUNCH_FREEZE_v1.sha256",
+      "source_collection": "new",
+      "sha256": "6e9348347a8e25ff29a320d282dbe1e3644508d7a698fcb2f3fd9b0c9cf78ce3",
+      "transformation": "none",
+      "archive_member": "production_source/authorities/original_deployment_prelaunch_freeze_r1_v1.sha256"
+    },
+    {
+      "public_file": "md/production_source_v1.zip",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231as_formal_exact20_materialized_starts_v1/402EC_FORMAL_START_MANIFEST_v1.json",
+      "source_collection": "new",
+      "sha256": "c1d2fcf9e781d96651bd77212e25d17356680958946bed695bc37f221f3690ef",
+      "transformation": "none",
+      "archive_member": "production_source/authorities/formal_start_manifest_v1.json"
+    },
+    {
+      "public_file": "md/production_source_v1.zip",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231as_formal_exact20_materialized_starts_v1/402EC_FORMAL_START_MATERIALIZATION_CONTRACT_v1.json",
+      "source_collection": "new",
+      "sha256": "3c174034066b667762834613bde9e8946a3893c308beb7c3b8dec91779332e64",
+      "transformation": "none",
+      "archive_member": "production_source/authorities/formal_start_materialization_contract_v1.json"
+    },
+    {
+      "public_file": "md/production_source_v1.zip",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231as_formal_exact20_materialized_starts_v1/402EC_FORMAL_START_MATERIALIZATION_FREEZE_v1.sha256",
+      "source_collection": "new",
+      "sha256": "6c5a98b77cbac1dee0688dfa0edd8094e8f01ab65ca72b2bfa9a57ed6a97091f",
+      "transformation": "none",
+      "archive_member": "production_source/authorities/formal_start_materialization_freeze_v1.sha256"
+    },
+    {
+      "public_file": "md/inputs/mono_NMe/R1_initial_replicas.npz",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231as_formal_exact20_materialized_starts_v1/TIERA_JACS1/R1/FORMAL_INITIAL_REPLICAS_v1.npz",
+      "source_collection": "old",
+      "sha256": "6e421825e2387b0726f1f9f54e766f9e9ea45c26a7a6708b7c27ef068e8e582b",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/mono_NMe/R2_initial_replicas.npz",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231as_formal_exact20_materialized_starts_v1/TIERA_JACS1/R2/FORMAL_INITIAL_REPLICAS_v1.npz",
+      "source_collection": "old",
+      "sha256": "d71a06e7a301638c64b6a272702d83e2fc3dc36eb9daf34c2f4792d76c3eecc6",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/di_NMe/R1_initial_replicas.npz",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231as_formal_exact20_materialized_starts_v1/TIERA_JACS3/R1/FORMAL_INITIAL_REPLICAS_v1.npz",
+      "source_collection": "new",
+      "sha256": "ca5843f78e093abfbb4a41488da440cadfc4b0996d71f8d1a401d16e70da7b2f",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/di_NMe/R2_initial_replicas.npz",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231as_formal_exact20_materialized_starts_v1/TIERA_JACS3/R2/FORMAL_INITIAL_REPLICAS_v1.npz",
+      "source_collection": "new",
+      "sha256": "4e272dd66793e4b901fdcff7cdb1a9c984a8813cf0aa494e83a94961744125c0",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/R1_initial_replicas.npz",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231as_formal_exact20_materialized_starts_v1/TIERA_JACS4/R1/FORMAL_INITIAL_REPLICAS_v1.npz",
+      "source_collection": "new",
+      "sha256": "406ab884f4351aac29d26ea5f452689ab36ff206a924d6bbf2603209b49fb828",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/R2_initial_replicas.npz",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/231as_formal_exact20_materialized_starts_v1/TIERA_JACS4/R2/FORMAL_INITIAL_REPLICAS_v1.npz",
+      "source_collection": "new",
+      "sha256": "9130f33e317123855c6206df5ee1828f8236a0a16ed51233e5f12786da4962bf",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/production_source_v1.zip",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/run_402DX_jacs4_test_alldouble_1ns_production_canary_v2.py",
+      "source_collection": "new",
+      "sha256": "ada7e16e6185eb781bef48dfa0156b254d5b010a5881ed3ba1a2400c42b4bc39",
+      "transformation": "none",
+      "archive_member": "production_source/tri_nme_double_precision_canary_1ns_v2.py"
+    },
+    {
+      "public_file": "md/analysis_tools/di_nme_roe_analysis_tools_v1.tar.gz",
+      "source_path": "analysis_tool_archives/402EC_JACS3_frozen_ROE_analysis_v1.tar.gz",
+      "source_collection": "new",
+      "sha256": "da985da2973bf6ae791a907eb3a9349392839259bcec164977cdba4813c279f9",
+      "transformation": "none"
+    },
+    {
+      "public_file": "md/inputs/mono_NMe/roe_bounds.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/239_jacs1_frozen_analysis_v1.c2Q7bN/results/ALL25_TRAJECTORY_RESTRAINTS_v1.tsv",
+      "source_collection": "old_first_collection",
+      "source_sha256": "f789ad52ba1bba9efed4c793756a90357116bf7032669d734b77da68371b614a",
+      "sha256": "ada686d0b75ae7ab81f086fd19b58fb732b3701a6c779739450fe71a5a705837",
+      "transformation": "Keep source-bound columns once per restraint; verify agreement across all four repeats."
+    },
+    {
+      "public_file": "md/inputs/di_NMe/roe_bounds.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/236_jacs3_frozen_ROE_v1.uFLRKO/results/ALL26_TRAJECTORY_RESTRAINTS_v1.tsv",
+      "source_collection": "new_first_collection",
+      "source_sha256": "fc58282485ae2c8299bb1da14b93a93046be25aca4de8cf93d79528c07ac4123",
+      "sha256": "54c66ffa2fe6f0815264161a0f61f4682af692ae636b4fe61d59ad9083569927",
+      "transformation": "Keep source-bound columns once per restraint; verify agreement across all four repeats."
+    }
+  ],
+  "descriptive_public_aliases": [
+    {
+      "previous_public_path": "md/analysis_tools/402EC_JACS3_frozen_ROE_analysis_v1.tar.gz",
+      "public_path": "md/analysis_tools/di_nme_roe_analysis_tools_v1.tar.gz",
+      "sha256": "da985da2973bf6ae791a907eb3a9349392839259bcec164977cdba4813c279f9",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained."
+    },
+    {
+      "previous_public_path": "md/original_runtime/run_402EC_formal_exact20_worker_v5.py",
+      "public_path": "md/production_source_v1.zip",
+      "sha256": "a2be00c88322dca860e44d09c21147f3b1547c133da6ffd04c18a793611cb605",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained.",
+      "archive_member": "production_source/formal_rest2_worker_v5.py"
+    },
+    {
+      "previous_public_path": "md/original_runtime/run_402DX_jacs4_test_alldouble_1ns_production_canary_v2.py",
+      "public_path": "md/production_source_v1.zip",
+      "sha256": "ada7e16e6185eb781bef48dfa0156b254d5b010a5881ed3ba1a2400c42b4bc39",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained.",
+      "archive_member": "production_source/tri_nme_double_precision_canary_1ns_v2.py"
+    },
+    {
+      "previous_public_path": "md/original_runtime/authorities/402CX_v2_FINAL_PRODUCTION_PROTOCOL_FREEZE_v1.sha256",
+      "public_path": "md/production_source_v1.zip",
+      "sha256": "937c290d1f2b44c1d7e6aa998f4bd8885e5b75d4245c471c340aff7a6a6e917f",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained.",
+      "archive_member": "production_source/authorities/formal_production_protocol_freeze_v1.sha256"
+    },
+    {
+      "previous_public_path": "md/original_runtime/authorities/402CX_v2_FINAL_PRODUCTION_PROTOCOL_v1.json",
+      "public_path": "md/production_source_v1.zip",
+      "sha256": "960dc16d81fbd58df2cda17a9d9d91a5dc70c556a08f883a94b704ea38a451ac",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained.",
+      "archive_member": "production_source/authorities/formal_production_protocol_v1.json"
+    },
+    {
+      "previous_public_path": "md/original_runtime/authorities/402CX_v2_PRODUCTION_STARTS_AND_SEEDS_v1.tsv",
+      "public_path": "md/production_source_v1.zip",
+      "sha256": "7d62289519fde4a23a2fe8954c13566aca4ba97bef0af7eb839cd7c69e5593fc",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained.",
+      "archive_member": "production_source/authorities/formal_production_starts_and_seeds_v1.tsv"
+    },
+    {
+      "previous_public_path": "md/original_runtime/authorities/402EA_R1_ORIGINAL_SERVER_DEPLOYMENT_AMENDMENT_v1.json",
+      "public_path": "md/production_source_v1.zip",
+      "sha256": "d61ca6b94faa29a7764b0e2d1db4f39aff6339ff79c4ea4d0b657a88ee26cdcf",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained.",
+      "archive_member": "production_source/authorities/original_deployment_amendment_r1_v1.json"
+    },
+    {
+      "previous_public_path": "md/original_runtime/authorities/402EA_R1_PRELAUNCH_FREEZE_v1.sha256",
+      "public_path": "md/production_source_v1.zip",
+      "sha256": "6e9348347a8e25ff29a320d282dbe1e3644508d7a698fcb2f3fd9b0c9cf78ce3",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained.",
+      "archive_member": "production_source/authorities/original_deployment_prelaunch_freeze_r1_v1.sha256"
+    },
+    {
+      "previous_public_path": "md/original_runtime/authorities/402EC_FORMAL_START_MANIFEST_v1.json",
+      "public_path": "md/production_source_v1.zip",
+      "sha256": "c1d2fcf9e781d96651bd77212e25d17356680958946bed695bc37f221f3690ef",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained.",
+      "archive_member": "production_source/authorities/formal_start_manifest_v1.json"
+    },
+    {
+      "previous_public_path": "md/original_runtime/authorities/402EC_FORMAL_START_MATERIALIZATION_CONTRACT_v1.json",
+      "public_path": "md/production_source_v1.zip",
+      "sha256": "3c174034066b667762834613bde9e8946a3893c308beb7c3b8dec91779332e64",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained.",
+      "archive_member": "production_source/authorities/formal_start_materialization_contract_v1.json"
+    },
+    {
+      "previous_public_path": "md/original_runtime/authorities/402EC_FORMAL_START_MATERIALIZATION_FREEZE_v1.sha256",
+      "public_path": "md/production_source_v1.zip",
+      "sha256": "6c5a98b77cbac1dee0688dfa0edd8094e8f01ab65ca72b2bfa9a57ed6a97091f",
+      "content_changed": "False",
+      "scope": "Descriptive public alias; original internal source identities retained.",
+      "archive_member": "production_source/authorities/formal_start_materialization_freeze_v1.sha256"
+    }
+  ],
+  "fragment_source_bundle": {
+    "file": "qm/original_method_source_v1.zip",
+    "sha256": "d03a75ff25ae81416f00755fa51c0a9fb2f0e42456f2e22bad434fdc09c1e11d",
+    "original_source_files": [
+      {
+        "archive_member": "fragment_method_source/gp_select_final_batch.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/06_gp_active_learning/run_batch08_selection_continuation_v1.py",
+        "sha256": "1e785a2077dd525a008814d541ff06db1fc6295f9a86b193d860c2a4a6a7375d"
+      },
+      {
+        "archive_member": "fragment_method_source/gp_qm_label_jobs.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/06_gp_active_learning/run_batch08_qm_v1.py",
+        "sha256": "0d8fc7e5a1770097824f1f4777d7f27645dca13d471af3014b7de1b922acd5be"
+      },
+      {
+        "archive_member": "fragment_method_source/gp_m0_label_jobs.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/06_gp_active_learning/run_batch08_m0_labels_v2.py",
+        "sha256": "b491794b350b7a5e89dfe2f8354baaaa3cb69739a0a00fd088feb0f16b0ac15b"
+      },
+      {
+        "archive_member": "fragment_method_source/selection_panel_qm_jobs.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/run_internal_validation144_qm_v1.py",
+        "sha256": "b590d62f5317a48f346be80575a1d7382851fb10a1d50abe5b0fd1f45422f5d5"
+      },
+      {
+        "archive_member": "fragment_method_source/selection_panel_m0_label_jobs.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/run_internal_validation144_m0_labels_v1.py",
+        "sha256": "7781222f23b654f6fc7ca1d511fe90a03907e62cf2c427e242967b4771dc5326"
+      },
+      {
+        "archive_member": "fragment_method_source/prepare_selection_panel_inputs.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/run_prepare_internal_validation144_qm_precommit_v1.py",
+        "sha256": "dd3f53940e11d7f2727f1a5e420b590a764f318f8ed81a437c3a74f0c4f18f92"
+      },
+      {
+        "archive_member": "fragment_method_source/fragment_qm_job_engine.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/run_budget192_physical_batch06_qm_v1.py",
+        "sha256": "86af3b80892a4b5643a416f607cdbe3b294b48b09288314a04eb541e9a7ee73e"
+      },
+      {
+        "archive_member": "fragment_method_source/fragment_m0_label_engine.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/run_budget192_physical_batch06_m0_labels_v1.py",
+        "sha256": "9dcae0e37a146f8a3636066f904d7ef7f6e0624c4a9d88302d366e5191669f6f"
+      },
+      {
+        "archive_member": "fragment_method_source/validate_selection_panel_qm_outputs.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/run_qc_internal_validation144_qm_postexec_v1.py",
+        "sha256": "99a8845e5cd5ff371eabced105211cae9c5960fbe864e946d6e076ef6d0be6b7"
+      },
+      {
+        "archive_member": "fragment_method_source/validate_gp_qm_outputs.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/06_gp_active_learning/run_qc_gp_batch08_fresh_qm_execution_v2.py",
+        "sha256": "849e85a811b86555a0b66934c761941b446d3ca49aa24e87b813c32d954b015f"
+      },
+      {
+        "archive_member": "fragment_method_source/gp_model_protocol.md",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/05_gp_implementation_precommit/NMEALA_JOINT_PERIODIC_GP_IMPLEMENTATION_PRECOMMIT_v1.md",
+        "sha256": "ecadccb8150cfbb48b8d85677752b5345e6e90e0372a34a3fda580341362a669"
+      }
+    ]
+  },
+  "production_source_bundle": {
+    "file": "md/production_source_v1.zip",
+    "sha256": "c2d6e01351c9d2eda8e571e009c4f00a41cb5cfb96dd2abeccaa4ba619e39d31",
+    "original_files": [
+      {
+        "archive_member": "production_source/authorities/formal_production_protocol_freeze_v1.sha256",
+        "previous_public_path": "md/original_runtime/authorities/formal_production_protocol_freeze_v1.sha256",
+        "sha256": "937c290d1f2b44c1d7e6aa998f4bd8885e5b75d4245c471c340aff7a6a6e917f"
+      },
+      {
+        "archive_member": "production_source/authorities/formal_production_protocol_v1.json",
+        "previous_public_path": "md/original_runtime/authorities/formal_production_protocol_v1.json",
+        "sha256": "960dc16d81fbd58df2cda17a9d9d91a5dc70c556a08f883a94b704ea38a451ac"
+      },
+      {
+        "archive_member": "production_source/authorities/formal_production_starts_and_seeds_v1.tsv",
+        "previous_public_path": "md/original_runtime/authorities/formal_production_starts_and_seeds_v1.tsv",
+        "sha256": "7d62289519fde4a23a2fe8954c13566aca4ba97bef0af7eb839cd7c69e5593fc"
+      },
+      {
+        "archive_member": "production_source/authorities/formal_start_manifest_v1.json",
+        "previous_public_path": "md/original_runtime/authorities/formal_start_manifest_v1.json",
+        "sha256": "c1d2fcf9e781d96651bd77212e25d17356680958946bed695bc37f221f3690ef"
+      },
+      {
+        "archive_member": "production_source/authorities/formal_start_materialization_contract_v1.json",
+        "previous_public_path": "md/original_runtime/authorities/formal_start_materialization_contract_v1.json",
+        "sha256": "3c174034066b667762834613bde9e8946a3893c308beb7c3b8dec91779332e64"
+      },
+      {
+        "archive_member": "production_source/authorities/formal_start_materialization_freeze_v1.sha256",
+        "previous_public_path": "md/original_runtime/authorities/formal_start_materialization_freeze_v1.sha256",
+        "sha256": "6c5a98b77cbac1dee0688dfa0edd8094e8f01ab65ca72b2bfa9a57ed6a97091f"
+      },
+      {
+        "archive_member": "production_source/authorities/original_deployment_amendment_r1_v1.json",
+        "previous_public_path": "md/original_runtime/authorities/original_deployment_amendment_r1_v1.json",
+        "sha256": "d61ca6b94faa29a7764b0e2d1db4f39aff6339ff79c4ea4d0b657a88ee26cdcf"
+      },
+      {
+        "archive_member": "production_source/authorities/original_deployment_prelaunch_freeze_r1_v1.sha256",
+        "previous_public_path": "md/original_runtime/authorities/original_deployment_prelaunch_freeze_r1_v1.sha256",
+        "sha256": "6e9348347a8e25ff29a320d282dbe1e3644508d7a698fcb2f3fd9b0c9cf78ce3"
+      },
+      {
+        "archive_member": "production_source/formal_rest2_worker_v5.py",
+        "previous_public_path": "md/original_runtime/formal_rest2_worker_v5.py",
+        "sha256": "a2be00c88322dca860e44d09c21147f3b1547c133da6ffd04c18a793611cb605"
+      },
+      {
+        "archive_member": "production_source/ladder_source/INPUT_PINS_v1.json",
+        "previous_public_path": "md/original_runtime/ladder_source/INPUT_PINS_v1.json",
+        "sha256": "3fee3c0ff091949bf840aa7352ca3fc526a4c4ddd42ed44efadd3d3bd14dddcf"
+      },
+      {
+        "archive_member": "production_source/ladder_source/PROTOCOL_v1.json",
+        "previous_public_path": "md/original_runtime/ladder_source/PROTOCOL_v1.json",
+        "sha256": "8470178ce1a7f49f9d5a5532f540f667ad81bc2e4266db0e33374585be2e6d93"
+      },
+      {
+        "archive_member": "production_source/ladder_source/audit_storage.py",
+        "previous_public_path": "md/original_runtime/ladder_source/audit_storage.py",
+        "sha256": "093a14b253d80642c02f55e010fb11dc9cb5701698ce14011a0c4359db65e516"
+      },
+      {
+        "archive_member": "production_source/ladder_source/common.py",
+        "previous_public_path": "md/original_runtime/ladder_source/common.py",
+        "sha256": "f8a9f337b12e1e7158d4d6fda57d7f092359108db11962e24708567f4c6deb4d"
+      },
+      {
+        "archive_member": "production_source/ladder_source/periodic_rest2_context_v1.py",
+        "previous_public_path": "md/original_runtime/ladder_source/periodic_rest2_context_v1.py",
+        "sha256": "d189ae2668cade2b0a56d4d9c0d76d3c08580978d59a99767c3ebfb78feeded2"
+      },
+      {
+        "archive_member": "production_source/ladder_source/pilot_engine.py",
+        "previous_public_path": "md/original_runtime/ladder_source/pilot_engine.py",
+        "sha256": "bba6b96bfa59b41f34f8ebd63556bfa1b21192950550b5184476d2c0f82145c2"
+      },
+      {
+        "archive_member": "production_source/ladder_source/pilot_worker.py",
+        "previous_public_path": "md/original_runtime/ladder_source/pilot_worker.py",
+        "sha256": "6bdc4bb6d9c425ecacb624147e5ddedcd1722884a277238ebee528182eaf5ff8"
+      },
+      {
+        "archive_member": "production_source/ladder_source/resource_guard.py",
+        "previous_public_path": "md/original_runtime/ladder_source/resource_guard.py",
+        "sha256": "4a85c3e041584d7d107841f8ba411cf825259dfbd331460577894c10bd57839b"
+      },
+      {
+        "archive_member": "production_source/ladder_source/rest2_scaling_openmm_v2.py",
+        "previous_public_path": "md/original_runtime/ladder_source/rest2_scaling_openmm_v2.py",
+        "sha256": "ecc4654666bbe29e5bed40f1eec73188de45f6b819e7b97dc0b29883d53fe274"
+      },
+      {
+        "archive_member": "production_source/ladder_source/state_adapter.py",
+        "previous_public_path": "md/original_runtime/ladder_source/state_adapter.py",
+        "sha256": "3d7629943e95817fc7891032ee9b0c65bd54e888c11b8a9efbb5f3ecdfd2565b"
+      },
+      {
+        "archive_member": "production_source/ladder_source/storage_precheck.py",
+        "previous_public_path": "md/original_runtime/ladder_source/storage_precheck.py",
+        "sha256": "2f797795851d62da77e1e3028de978acb6aa5b50bef327523cedf5405b344da7"
+      },
+      {
+        "archive_member": "production_source/tri_nme_double_precision_canary_1ns_v2.py",
+        "previous_public_path": "md/original_runtime/tri_nme_double_precision_canary_1ns_v2.py",
+        "sha256": "ada7e16e6185eb781bef48dfa0156b254d5b010a5881ed3ba1a2400c42b4bc39"
+      }
+    ]
+  },
+  "note": "SHA256 values identify the preserved scientific input/source bytes. For archive members, hash the member bytes rather than the containing archive. Original internal identifiers remain unchanged in frozen sources.",
+  "analysis_source_bundle": {
+    "file": "md/original_analysis_source_v1.zip",
+    "sha256": "1395cb3b40404f5a53933ea0383ef84b8b79a8c47235a5f722a34b3eb0962158",
+    "original_files": [
+      {
+        "archive_member": "original_analysis/tri_nme_core/LOCAL_VALIDATION_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/LOCAL_VALIDATION_v1.json",
+        "sha256": "49ac68d7a154e8feb4b606398bacad9422899ba825ab7da0fb5b1efec4294239"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/NUMERICAL_FUNCTION_PROVENANCE_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/NUMERICAL_FUNCTION_PROVENANCE_v1.json",
+        "sha256": "107fb3f0a75fa7bec0defeba415110674335d6c7dd732dc7f61d63dfc48781ea"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/PACKAGE_PINS_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/PACKAGE_PINS_v1.json",
+        "sha256": "7abf3316c5e8fc643604ad14f11c90f9e737e7bd608f62b2848c89cf85aa13ec"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/README.txt",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/README.txt",
+        "sha256": "bbb96452bcf08fa044924b7c966337450360630f833f1804875021b7420626df"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/REVIEWED_TOPOLOGY_BINDING_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/REVIEWED_TOPOLOGY_BINDING_v1.json",
+        "sha256": "a14638341d8700f81e3203dec8bfde43f5f0ec39a22844b8eee3e5d76d61d207"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/RUNTIME_INPUT_PINS_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/RUNTIME_INPUT_PINS_v1.json",
+        "sha256": "94434f406560318520a7ced1fd75a957d08b05c54c16856341a6eb637522801c"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/UPSTREAM_INPUT_BUNDLE_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/UPSTREAM_INPUT_BUNDLE_v1.json",
+        "sha256": "0a205196bea292c37537e4523b5b7aa435668d91ec45cb6685f43cee2f4a67b9"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/analyze_jacs4_v1.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/analyze_jacs4_v1.py",
+        "sha256": "4af91a2df1d4f22028758beda305103632dbf8163451c44d841f23b6abe5f147"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/16b_post_m4_cyclic_transfer_benchmark_extraction/NMEALA_POSTM4_CYCLIC_TRANSFER_EXACT16_BENCHMARK_MANIFEST_v1.tsv",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/16b_post_m4_cyclic_transfer_benchmark_extraction/NMEALA_POSTM4_CYCLIC_TRANSFER_EXACT16_BENCHMARK_MANIFEST_v1.tsv",
+        "sha256": "405de2188acba1f0217174deb8ef4b327d9335608e1186da0da429b39551593b"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/16b_post_m4_cyclic_transfer_benchmark_extraction/NMEALA_POSTM4_CYCLIC_TRANSFER_EXACT16_NMR_EVIDENCE_INVENTORY_v1.tsv",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/16b_post_m4_cyclic_transfer_benchmark_extraction/NMEALA_POSTM4_CYCLIC_TRANSFER_EXACT16_NMR_EVIDENCE_INVENTORY_v1.tsv",
+        "sha256": "bfb11d13cef050123913887573ea3c1a344b35285477c1a68f970c3a56c0818f"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/16b_post_m4_cyclic_transfer_benchmark_extraction/NMEALA_POSTM4_CYCLIC_TRANSFER_EXPERIMENTAL_DIHEDRAL_REFERENCE_v1.tsv",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/16b_post_m4_cyclic_transfer_benchmark_extraction/NMEALA_POSTM4_CYCLIC_TRANSFER_EXPERIMENTAL_DIHEDRAL_REFERENCE_v1.tsv",
+        "sha256": "c965fda7d77c9784c119110fcf2863584da8eea539b75fdcd8d55fb893f7e49d"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/16b_post_m4_cyclic_transfer_benchmark_extraction/NMEALA_POSTM4_CYCLIC_TRANSFER_NMR_PROTOCOL_v1.tsv",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/16b_post_m4_cyclic_transfer_benchmark_extraction/NMEALA_POSTM4_CYCLIC_TRANSFER_NMR_PROTOCOL_v1.tsv",
+        "sha256": "d39d10d3a2b3878e1636596bcab21f710054f4ffe7cab4e4f0d08782492c5d51"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/16c_post_m4_cyclic_transfer_benchmark_extraction_closure/NMEALA_POSTM4_CYCLIC_TRANSFER_SOURCE_ADJUDICATION_v1.tsv",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/16c_post_m4_cyclic_transfer_benchmark_extraction_closure/NMEALA_POSTM4_CYCLIC_TRANSFER_SOURCE_ADJUDICATION_v1.tsv",
+        "sha256": "7490102c0660331b67bf57aedafdd70fdce9b487df50ff4c86f986332e58de75"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/16e_post_m4_cyclic_transfer_chirality_application_closure/NMEALA_POSTM4_CYCLIC_TRANSFER_CHIRALITY_APPLICATION_FINAL_CLOSURE_FREEZE_v1.sha256",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/16e_post_m4_cyclic_transfer_chirality_application_closure/NMEALA_POSTM4_CYCLIC_TRANSFER_CHIRALITY_APPLICATION_FINAL_CLOSURE_FREEZE_v1.sha256",
+        "sha256": "f95e0dcfd3a0817bc8af83a92c5afc9575f9271399092c99e5f2f470e056b3e9"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/16f_post_m4_cyclic_transfer_tiera_analysis_precommit/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ANALYSIS_PRECOMMIT_FREEZE_v1.sha256",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/16f_post_m4_cyclic_transfer_tiera_analysis_precommit/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ANALYSIS_PRECOMMIT_FREEZE_v1.sha256",
+        "sha256": "a23bc0eb9ccbf024ad86af04c9115bfcd48b687d2e19f560bbb2b2712a0f17e4"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/16f_post_m4_cyclic_transfer_tiera_analysis_precommit/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ANALYSIS_PROTOCOL_v1.md",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/16f_post_m4_cyclic_transfer_tiera_analysis_precommit/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ANALYSIS_PROTOCOL_v1.md",
+        "sha256": "d47fc6533ac2f729298c42d0e04b7e55163edfd483e3d447a17e146310dcb31b"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/16f_post_m4_cyclic_transfer_tiera_analysis_precommit/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_EXACT7_ANALYSIS_TARGETS_v1.tsv",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/16f_post_m4_cyclic_transfer_tiera_analysis_precommit/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_EXACT7_ANALYSIS_TARGETS_v1.tsv",
+        "sha256": "f63cd0c41b957d35e354edaed12de4ea29829007a3573c10d062765c71b53cbd"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/16f_post_m4_cyclic_transfer_tiera_analysis_precommit/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_OBSERVABLE_DEFINITIONS_v1.tsv",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/16f_post_m4_cyclic_transfer_tiera_analysis_precommit/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_OBSERVABLE_DEFINITIONS_v1.tsv",
+        "sha256": "3101f1c42eece859a689252b47def992b26eb041a5a83000de19efe849d05e7c"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/07_nmeala_separability_pilot/13_joint_correction_development/run_freeze_postm4_cyclic_transfer_tiera_analysis_observable_protocol_v2.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/07_nmeala_separability_pilot/13_joint_correction_development/run_freeze_postm4_cyclic_transfer_tiera_analysis_observable_protocol_v2.py",
+        "sha256": "8af146469dad6caf35f133f74bba38b03b84e5bd231e7bab34b57cdcbf4ee876"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority/AUTHORITY_INPUTS_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority/AUTHORITY_INPUTS_v1.json",
+        "sha256": "7e764c4d6eadcf2d2e314e4c6929d30005de797386182933e82946b2955e48d5"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16f_post_m4_cyclic_transfer_tiera_analysis_precommit/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ANALYSIS_PRECOMMIT_FREEZE_v1.sha256",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16f_post_m4_cyclic_transfer_tiera_analysis_precommit/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ANALYSIS_PRECOMMIT_FREEZE_v1.sha256",
+        "sha256": "a23bc0eb9ccbf024ad86af04c9115bfcd48b687d2e19f560bbb2b2712a0f17e4"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16g_post_m4_cyclic_transfer_tiera_roe_source_targets/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_EXACT152_ROE_DISTANCE_RESTRAINTS_v1.tsv",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16g_post_m4_cyclic_transfer_tiera_roe_source_targets/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_EXACT152_ROE_DISTANCE_RESTRAINTS_v1.tsv",
+        "sha256": "d2c74165aa896fcc5a6547d75c83d3a869b2b59b13e586569e5d042b7c3f21dd"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16g_post_m4_cyclic_transfer_tiera_roe_source_targets/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_SOURCE_SEMANTIC_ADJUDICATION_v1.md",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16g_post_m4_cyclic_transfer_tiera_roe_source_targets/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_SOURCE_SEMANTIC_ADJUDICATION_v1.md",
+        "sha256": "925b767b6adc17a2836999c8927bf19628a4a53f47a4892790de81f537111a76"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16g_post_m4_cyclic_transfer_tiera_roe_source_targets/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_SOURCE_TARGET_FREEZE_v1.sha256",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16g_post_m4_cyclic_transfer_tiera_roe_source_targets/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_SOURCE_TARGET_FREEZE_v1.sha256",
+        "sha256": "c28745f2731169ef80583a94dda03350800f421574839048b1c52dfe2454e78b"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16h_post_m4_cyclic_transfer_tiera_roe_source_target_closure/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_SOURCE_TARGET_AUTHORITY_INVENTORY_v1.tsv",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16h_post_m4_cyclic_transfer_tiera_roe_source_target_closure/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_SOURCE_TARGET_AUTHORITY_INVENTORY_v1.tsv",
+        "sha256": "0b81f349f7a8a117b218a849438bcd00e583ca546c308c63af6703c194246ad8"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16h_post_m4_cyclic_transfer_tiera_roe_source_target_closure/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_SOURCE_TARGET_FINAL_CLOSURE_FREEZE_v1.sha256",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16h_post_m4_cyclic_transfer_tiera_roe_source_target_closure/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_SOURCE_TARGET_FINAL_CLOSURE_FREEZE_v1.sha256",
+        "sha256": "88ee6f66efcfc3993573629715491df7ee40d668ddee97c789499d007c0b70e1"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16h_post_m4_cyclic_transfer_tiera_roe_source_target_closure/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_SOURCE_TARGET_FINAL_CLOSURE_QC_v1.md",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16h_post_m4_cyclic_transfer_tiera_roe_source_target_closure/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_SOURCE_TARGET_FINAL_CLOSURE_QC_v1.md",
+        "sha256": "ca2979f5f7cdd681435ebb086d7a8715f3260f61f3e90b05b144fcc48b89aa58"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16i_post_m4_cyclic_transfer_tiera_roe_endpoint_mapping/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_ENDPOINT_MAPPING_CONTRACT_v1.md",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16i_post_m4_cyclic_transfer_tiera_roe_endpoint_mapping/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_ENDPOINT_MAPPING_CONTRACT_v1.md",
+        "sha256": "ead8f195884baf634899d9c4fa069096a2a5592849302669509e1bfa3ea6205a"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16i_post_m4_cyclic_transfer_tiera_roe_endpoint_mapping/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_ENDPOINT_MAPPING_FREEZE_v1.sha256",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16i_post_m4_cyclic_transfer_tiera_roe_endpoint_mapping/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_ENDPOINT_MAPPING_FREEZE_v1.sha256",
+        "sha256": "1f9035a75bbac1a691a971a02615967da1b067be7d64a1dd6af5af4779f36053"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16i_post_m4_cyclic_transfer_tiera_roe_endpoint_mapping/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_ENDPOINT_SEMANTIC_MAPPING_v1.tsv",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/16i_post_m4_cyclic_transfer_tiera_roe_endpoint_mapping/NMEALA_POSTM4_CYCLIC_TRANSFER_TIERA_ROE_ENDPOINT_SEMANTIC_MAPPING_v1.tsv",
+        "sha256": "0110214e7ec76e8a918dfc2244ece1a26da036e947f6fe586f14166f8cd709d8"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/21l_post_m4_final_production_protocol_freeze_v2/402CX_v2_FINAL_PRODUCTION_PROTOCOL_FREEZE_v1.sha256",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/21l_post_m4_final_production_protocol_freeze_v2/402CX_v2_FINAL_PRODUCTION_PROTOCOL_FREEZE_v1.sha256",
+        "sha256": "937c290d1f2b44c1d7e6aa998f4bd8885e5b75d4245c471c340aff7a6a6e917f"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/21l_post_m4_final_production_protocol_freeze_v2/402CX_v2_FINAL_PRODUCTION_PROTOCOL_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/21l_post_m4_final_production_protocol_freeze_v2/402CX_v2_FINAL_PRODUCTION_PROTOCOL_v1.json",
+        "sha256": "960dc16d81fbd58df2cda17a9d9d91a5dc70c556a08f883a94b704ea38a451ac"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/run_close_jacs_tiera_exact152_roe_source_targets_v1.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/run_close_jacs_tiera_exact152_roe_source_targets_v1.py",
+        "sha256": "6dde08621990d878a306ca0720e84c5396b6e82cda297d450d795455d0cfe0be"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/run_extract_jacs_tiera_exact152_roe_source_targets_v1.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/run_extract_jacs_tiera_exact152_roe_source_targets_v1.py",
+        "sha256": "bb2bb1b86b310f2f1bced8cd8c3620956b0f78b5ec4f754236829558ff1ded1c"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/run_freeze_tiera_roe_endpoint_semantic_mapping_v1.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/run_freeze_tiera_roe_endpoint_semantic_mapping_v1.py",
+        "sha256": "91cde5a0f9da0ad7c1de511edbfee3e698c580d524880c8bc8f18c4e906d566f"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/run_inspect_jacs_tiera_roe_source_tables_v1.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/07_nmeala_separability_pilot/13_joint_correction_development/run_inspect_jacs_tiera_roe_source_tables_v1.py",
+        "sha256": "9b0745f03f4ac55b868e08d9e744f62ae74fb2f555e40699d633260122df3a5a"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/authority_roe/ROE_AUTHORITY_COLLECTION_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/authority_roe/ROE_AUTHORITY_COLLECTION_v1.json",
+        "sha256": "7ae039da896245bdb5fe04705b9baee1c679a63979f2ed661d65c44bd87fde9d"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/closed_inputs_v1.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/closed_inputs_v1.py",
+        "sha256": "eaa8d2b31d93bec9564cab781ee3d04a2e9fc6345f0654e63181148d34603469"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/frozen_math_v1.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/frozen_math_v1.py",
+        "sha256": "2d93e5f6a31b6d496d8c007fe06467cc1c4589bf63affe650cc3fd2b9a1e1289"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/graph_binding_v1.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/graph_binding_v1.py",
+        "sha256": "c336846e8084fadcd71c24b5e8533c02f2fea8bb80fa88dd5213a1d68648b9dd"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/reviewed_static/BUILD_REPORT_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/reviewed_static/BUILD_REPORT_v1.json",
+        "sha256": "9cdfefe04ab6571ba77072a45be6b3ac7fad6d98cbd0100b0230670484f6f049"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/reviewed_static/CONTROL.xml",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/reviewed_static/CONTROL.xml",
+        "sha256": "ff286a83199241abd9cf38b42e70fbc633d10fc89b9f1c5f9a646d5e28f31cfc"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/reviewed_static/SOLUTE_GEOMETRY_v1.json",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/reviewed_static/SOLUTE_GEOMETRY_v1.json",
+        "sha256": "e2b0a7fa2f19cf9e2f32a607d8bc77506de624afb671dd70ce25d0c373b0b5db"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/reviewed_static/TEST.xml",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/reviewed_static/TEST.xml",
+        "sha256": "03de1af8aaee6582de98b4c7a33ed21134ae6b474d58faab377c8eeee172ee00"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_core/run_new_server.sh",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/243_jacs4_rmsd_pmf_v1.efnuldt6/jacs4_analysis_v1/run_new_server.sh",
+        "sha256": "dbfb4158b75cf950fe66ce488d4ac70263415735b460520701d7470ff0fd4a7b"
+      },
+      {
+        "archive_member": "original_analysis/rest2_exchange_diagnostics.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/nme_readonly_cpu_audit_v1.py",
+        "sha256": "aad1d3ab31dad668df0988a88cb62ffeff039ea64501072a5fed08015afc36ec"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_imhb_analysis.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/run_nme_jacs4_imhb_v1.py",
+        "sha256": "ac4ad24c6828864e29280cfa94b5d48d2c6b612f2330b15cfce96c6e9212dea9"
+      },
+      {
+        "archive_member": "original_analysis/tri_nme_rmsd_pmf_analysis.py",
+        "original_source_member": "source/07_nmeala_separability_pilot/13_joint_correction_development/run_nme_jacs4_rmsd_pmf_v1.py",
+        "sha256": "4a3a2d91b45db49aa9d6f1b6eda14c2312f03b99a0c621d2af766259a02d6c1f"
+      }
+    ]
+  }
+}

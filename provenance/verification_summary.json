@@ -1,0 +1,36 @@
+{
+  "version": "1.5.0",
+  "source_version": "1.4.1",
+  "status": "PASS",
+  "scientific_files_preserved_byte_exact": 148,
+  "numerical_reproduction_checks": [
+    {
+      "name": "matched_QM_fit",
+      "status": "PASS"
+    },
+    {
+      "name": "Ala_Val_validation",
+      "status": "PASS"
+    },
+    {
+      "name": "acquisition_predictions_and_scores",
+      "status": "PASS"
+    },
+    {
+      "name": "tri_NMe_endpoints",
+      "status": "PASS"
+    },
+    {
+      "name": "three_native_systems",
+      "status": "PASS"
+    }
+  ],
+  "native_systems": 3,
+  "native_start_arrays": 6,
+  "reviewed_ROE_bindings": 71,
+  "acquisition_training_manifests": 12,
+  "acquisition_prediction_tables": 24,
+  "original_method_source_files_retained": 80,
+  "QM_or_MD_launched": false,
+  "scientific_parameters_changed": false
+}
