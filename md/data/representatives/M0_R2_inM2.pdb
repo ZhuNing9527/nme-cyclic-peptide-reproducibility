@@ -1,0 +1,121 @@
+REMARK  JACS4 PHYSICAL-STATE FRAME, UNWRAPPED AND RIGIDLY ALIGNED
+REMARK  RESIDUES 1,2,5 ARE N-METHYLATED; RESIDUE 1 IS D-ALA
+HETATM    1  N   DMA A   1      24.249  35.518  32.472  1.00  0.00           N
+HETATM    2  CA  DMA A   1      24.058  36.366  31.327  1.00  0.00           C
+HETATM    3  C   DMA A   1      22.540  36.798  31.189  1.00  0.00           C
+HETATM    4  O   DMA A   1      22.200  37.897  31.442  1.00  0.00           O
+HETATM    5  CB  DMA A   1      25.024  37.589  31.422  1.00  0.00           C
+HETATM    6  CN  DMA A   1      23.824  36.036  33.800  1.00  0.00           C
+HETATM    7  N   NAL A   2      21.657  35.865  30.554  1.00  0.00           N
+HETATM    8  CA  NAL A   2      20.172  35.991  30.773  1.00  0.00           C
+HETATM    9  C   NAL A   2      19.622  35.918  32.263  1.00  0.00           C
+HETATM   10  O   NAL A   2      19.933  36.734  33.136  1.00  0.00           O
+HETATM   11  CB  NAL A   2      19.217  35.246  29.794  1.00  0.00           C
+HETATM   12  CN  NAL A   2      22.134  34.590  29.962  1.00  0.00           C
+HETATM   13  N   ALA A   3      18.863  34.798  32.561  1.00  0.00           N
+HETATM   14  CA  ALA A   3      18.345  34.559  33.920  1.00  0.00           C
+HETATM   15  C   ALA A   3      19.385  33.817  34.873  1.00  0.00           C
+HETATM   16  O   ALA A   3      19.348  33.930  36.120  1.00  0.00           O
+HETATM   17  CB  ALA A   3      16.937  33.862  33.795  1.00  0.00           C
+HETATM   18  N   ALA A   4      20.484  33.256  34.248  1.00  0.00           N
+HETATM   19  CA  ALA A   4      21.727  32.916  34.933  1.00  0.00           C
+HETATM   20  C   ALA A   4      22.891  32.988  33.943  1.00  0.00           C
+HETATM   21  O   ALA A   4      22.689  32.783  32.716  1.00  0.00           O
+HETATM   22  CB  ALA A   4      21.517  31.502  35.419  1.00  0.00           C
+HETATM   23  N   NAL A   5      24.188  33.247  34.501  1.00  0.00           N
+HETATM   24  CA  NAL A   5      25.329  33.463  33.561  1.00  0.00           C
+HETATM   25  C   NAL A   5      25.083  34.372  32.329  1.00  0.00           C
+HETATM   26  O   NAL A   5      25.656  34.126  31.245  1.00  0.00           O
+HETATM   27  CB  NAL A   5      26.122  32.111  33.234  1.00  0.00           C
+HETATM   28  CN  NAL A   5      24.507  33.384  35.945  1.00  0.00           C
+HETATM   29  HA  DMA A   1      24.387  35.942  30.371  1.00  0.00           H
+HETATM   30 HB1  DMA A   1      24.792  38.297  30.617  1.00  0.00           H
+HETATM   31 HB2  DMA A   1      26.069  37.280  31.304  1.00  0.00           H
+HETATM   32 HB3  DMA A   1      24.899  38.170  32.343  1.00  0.00           H
+HETATM   33 HM1  DMA A   1      24.472  36.044  34.685  1.00  0.00           H
+HETATM   34 HM2  DMA A   1      23.490  37.079  33.738  1.00  0.00           H
+HETATM   35 HM3  DMA A   1      22.892  35.497  34.012  1.00  0.00           H
+HETATM   36  HA  NAL A   2      19.987  37.055  30.584  1.00  0.00           H
+HETATM   37 HB1  NAL A   2      19.798  35.285  28.865  1.00  0.00           H
+HETATM   38 HB2  NAL A   2      19.019  34.197  30.046  1.00  0.00           H
+HETATM   39 HB3  NAL A   2      18.238  35.730  29.706  1.00  0.00           H
+HETATM   40 HM1  NAL A   2      21.290  33.897  29.853  1.00  0.00           H
+HETATM   41 HM2  NAL A   2      22.808  34.027  30.621  1.00  0.00           H
+HETATM   42 HM3  NAL A   2      22.438  34.802  28.930  1.00  0.00           H
+HETATM   43  H   ALA A   3      18.900  34.012  31.922  1.00  0.00           H
+HETATM   44  HA  ALA A   3      18.140  35.538  34.372  1.00  0.00           H
+HETATM   45 HB1  ALA A   3      16.497  34.004  34.789  1.00  0.00           H
+HETATM   46 HB2  ALA A   3      16.938  32.772  33.678  1.00  0.00           H
+HETATM   47 HB3  ALA A   3      16.225  34.239  33.052  1.00  0.00           H
+HETATM   48  H   ALA A   4      20.463  33.263  33.235  1.00  0.00           H
+HETATM   49  HA  ALA A   4      21.986  33.549  35.792  1.00  0.00           H
+HETATM   50 HB1  ALA A   4      20.624  31.475  36.054  1.00  0.00           H
+HETATM   51 HB2  ALA A   4      21.322  30.973  34.479  1.00  0.00           H
+HETATM   52 HB3  ALA A   4      22.354  31.098  36.000  1.00  0.00           H
+HETATM   53  HA  NAL A   5      26.038  34.095  34.111  1.00  0.00           H
+HETATM   54 HB1  NAL A   5      26.239  31.523  34.152  1.00  0.00           H
+HETATM   55 HB2  NAL A   5      27.083  32.266  32.730  1.00  0.00           H
+HETATM   56 HB3  NAL A   5      25.559  31.425  32.591  1.00  0.00           H
+HETATM   57 HM1  NAL A   5      25.561  33.118  36.095  1.00  0.00           H
+HETATM   58 HM2  NAL A   5      23.849  32.775  36.577  1.00  0.00           H
+HETATM   59 HM3  NAL A   5      24.308  34.421  36.242  1.00  0.00           H
+CONECT    1    2    6   25
+CONECT    2    1    3    5   29
+CONECT    3    2    4    7
+CONECT    4    3
+CONECT    5    2   30   31   32
+CONECT    6    1   33   34   35
+CONECT    7    3    8   12
+CONECT    8    7    9   11   36
+CONECT    9    8   10   13
+CONECT   10    9
+CONECT   11    8   37   38   39
+CONECT   12    7   40   41   42
+CONECT   13    9   14   43
+CONECT   14   13   15   17   44
+CONECT   15   14   16   18
+CONECT   16   15
+CONECT   17   14   45   46   47
+CONECT   18   15   19   48
+CONECT   19   18   20   22   49
+CONECT   20   19   21   23
+CONECT   21   20
+CONECT   22   19   50   51   52
+CONECT   23   20   24   28
+CONECT   24   23   25   27   53
+CONECT   25    1   24   26
+CONECT   26   25
+CONECT   27   24   54   55   56
+CONECT   28   23   57   58   59
+CONECT   29    2
+CONECT   30    5
+CONECT   31    5
+CONECT   32    5
+CONECT   33    6
+CONECT   34    6
+CONECT   35    6
+CONECT   36    8
+CONECT   37   11
+CONECT   38   11
+CONECT   39   11
+CONECT   40   12
+CONECT   41   12
+CONECT   42   12
+CONECT   43   13
+CONECT   44   14
+CONECT   45   17
+CONECT   46   17
+CONECT   47   17
+CONECT   48   18
+CONECT   49   19
+CONECT   50   22
+CONECT   51   22
+CONECT   52   22
+CONECT   53   24
+CONECT   54   27
+CONECT   55   27
+CONECT   56   27
+CONECT   57   28
+CONECT   58   28
+CONECT   59   28
+END

@@ -1,0 +1,66 @@
+{
+  "physical_model": {
+    "CONTROL": "frozen GAFF2+RESP M0 baseline",
+    "CUDA_precision": "double",
+    "TEST": "same frozen GAFF2+RESP M0 baseline plus frozen FOURIER_K4_L100 M4 only",
+    "ensemble": "fixed-volume NVT",
+    "integrator_thermostat_constraints": "must be inherited byte-semantically from the validated 402CU runtime path; production-engine work may not alter physical settings",
+    "physical_temperature_K": 297.0,
+    "solvent": "frozen explicit DMSO"
+  },
+  "rest2": {
+    "M4_scaling": "M4 is solute-solute and scales by lambda",
+    "exchange_interval_ps": 0.1,
+    "exchange_interval_steps": 100,
+    "lambda_min": 0.125,
+    "lambda_placement": "quadratic",
+    "lambda_values": [
+      1.0,
+      0.8859179158005411,
+      0.7787431575318832,
+      0.6784757251940259,
+      0.5851156187869697,
+      0.4986628383107143,
+      0.41911738376525964,
+      0.346479255150606,
+      0.28074845246675323,
+      0.22192497571370132,
+      0.17000882489145025,
+      0.125
+    ],
+    "physical_state": "thermodynamic state 0, lambda=1",
+    "primary_analysis_tracks_thermodynamic_state_not_fixed_walker": true,
+    "replicas": 12,
+    "timestep_fs": 1.0
+  },
+  "run_schedule": {
+    "per_run_equilibration_ns": 10.0,
+    "per_run_recorded_production_ns": 50.0,
+    "recorded_runs_per_peptide_arm": 2
+  },
+  "physical_production_frame_interval_ps": 1.0,
+  "primary_endpoint": {
+    "all_predefined_sites_remain_in_endpoint": true,
+    "definitions": "inherit the previously frozen exact cis/trans pattern and phi/psi circular-RMS <=45 degree rules without modification",
+    "metric": "M2_JOINT_MAJOR_BASIN_OCCUPANCY",
+    "paired_replicate_effects_also_reported": [
+      "Delta_major_R1 = P_TEST_R1 - P_CONTROL_R1",
+      "Delta_major_R2 = P_TEST_R2 - P_CONTROL_R2"
+    ],
+    "per_arm_estimator": "P_arm = (P_R1 + P_R2) / 2",
+    "per_peptide_effect": "Delta_major = P_TEST_arm - P_CONTROL_arm",
+    "per_replicate_reporting": [
+      "P_major_R1",
+      "P_major_R2"
+    ],
+    "replicate_disagreement_may_be_hidden_by_arm_mean": false,
+    "site_censoring_based_on_crossing_count": "FORBIDDEN"
+  },
+  "production_environment_versions": {
+    "netCDF4": "1.7.4",
+    "numpy": "2.4.6",
+    "openmm": "8.4.0",
+    "openmmtools": "0.26.0",
+    "pymbar": "4.2.0"
+  }
+}

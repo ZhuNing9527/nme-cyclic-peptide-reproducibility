@@ -1,0 +1,230 @@
+{
+  "version": 1,
+  "systems": [
+    {
+      "system": "mono_NMe",
+      "source_benchmark_id": "TIERA_JACS1",
+      "methylated_residues": [
+        1
+      ],
+      "solute_particles": 53,
+      "total_particles": 4943,
+      "roe_count": 25,
+      "formal_contracts": [
+        {
+          "source_row": "ROW01_TIERA_JACS1_CONTROL_R1",
+          "arm": "M0",
+          "repeat": "R1",
+          "physical_xml_sha256": "938724a9db417f89369e861fb5294efc3a66fd409f72412c5aa602b0be08fdf8",
+          "formal_start_sha256": "6e421825e2387b0726f1f9f54e766f9e9ea45c26a7a6708b7c27ef068e8e582b"
+        },
+        {
+          "source_row": "ROW02_TIERA_JACS1_TEST_R1",
+          "arm": "Full",
+          "repeat": "R1",
+          "physical_xml_sha256": "d9c02b173ca526bb714e528d6ae8829e0bad607158ecd39fe6eb24b85fd07728",
+          "formal_start_sha256": "6e421825e2387b0726f1f9f54e766f9e9ea45c26a7a6708b7c27ef068e8e582b"
+        },
+        {
+          "source_row": "ROW03_TIERA_JACS1_CONTROL_R2",
+          "arm": "M0",
+          "repeat": "R2",
+          "physical_xml_sha256": "938724a9db417f89369e861fb5294efc3a66fd409f72412c5aa602b0be08fdf8",
+          "formal_start_sha256": "d71a06e7a301638c64b6a272702d83e2fc3dc36eb9daf34c2f4792d76c3eecc6"
+        },
+        {
+          "source_row": "ROW04_TIERA_JACS1_TEST_R2",
+          "arm": "Full",
+          "repeat": "R2",
+          "physical_xml_sha256": "d9c02b173ca526bb714e528d6ae8829e0bad607158ecd39fe6eb24b85fd07728",
+          "formal_start_sha256": "d71a06e7a301638c64b6a272702d83e2fc3dc36eb9daf34c2f4792d76c3eecc6"
+        }
+      ],
+      "files": {
+        "M0": {
+          "path": "inputs/mono_NMe/M0.xml",
+          "sha256": "938724a9db417f89369e861fb5294efc3a66fd409f72412c5aa602b0be08fdf8"
+        },
+        "Full": {
+          "path": "inputs/mono_NMe/Full.xml",
+          "sha256": "d9c02b173ca526bb714e528d6ae8829e0bad607158ecd39fe6eb24b85fd07728"
+        },
+        "geometry": {
+          "path": "inputs/mono_NMe/SOLUTE_GEOMETRY_v1.json",
+          "sha256": "1132d55ebdc6bddc2851a9efbc063db9d6ef721f2eb1327e6d68dbc84cbdf438"
+        },
+        "build_report": {
+          "path": "inputs/mono_NMe/BUILD_REPORT_v1.json",
+          "sha256": "ff0079b790a0df9f04d85db0d8d93cc24692ccd9d8c8b1863f907078716f5fb0"
+        },
+        "binding": {
+          "path": "inputs/mono_NMe/REVIEWED_TOPOLOGY_BINDING_v1.json",
+          "sha256": "36418e7196922459fb522fa5afb309c65daefe6f69179f5d2fbb9f5f11692e3e"
+        },
+        "roe_bounds": {
+          "path": "inputs/mono_NMe/roe_bounds.tsv",
+          "sha256": "ada686d0b75ae7ab81f086fd19b58fb732b3701a6c779739450fe71a5a705837"
+        },
+        "R1": {
+          "path": "inputs/mono_NMe/R1_initial_replicas.npz",
+          "sha256": "6e421825e2387b0726f1f9f54e766f9e9ea45c26a7a6708b7c27ef068e8e582b"
+        },
+        "R2": {
+          "path": "inputs/mono_NMe/R2_initial_replicas.npz",
+          "sha256": "d71a06e7a301638c64b6a272702d83e2fc3dc36eb9daf34c2f4792d76c3eecc6"
+        }
+      }
+    },
+    {
+      "system": "di_NMe",
+      "source_benchmark_id": "TIERA_JACS3",
+      "methylated_residues": [
+        1,
+        5
+      ],
+      "solute_particles": 56,
+      "total_particles": 4936,
+      "roe_count": 26,
+      "formal_contracts": [
+        {
+          "source_row": "ROW09_TIERA_JACS3_CONTROL_R1",
+          "arm": "M0",
+          "repeat": "R1",
+          "physical_xml_sha256": "08fb806163332b689f331b298cbd70589de589c02d557b0385b788ce4da39fa9",
+          "formal_start_sha256": "ca5843f78e093abfbb4a41488da440cadfc4b0996d71f8d1a401d16e70da7b2f"
+        },
+        {
+          "source_row": "ROW10_TIERA_JACS3_TEST_R1",
+          "arm": "Full",
+          "repeat": "R1",
+          "physical_xml_sha256": "257eb2c1ba86b3318e3d8713771986bb734d6d8ba1a57eb4ae05c0132a383a30",
+          "formal_start_sha256": "ca5843f78e093abfbb4a41488da440cadfc4b0996d71f8d1a401d16e70da7b2f"
+        },
+        {
+          "source_row": "ROW11_TIERA_JACS3_CONTROL_R2",
+          "arm": "M0",
+          "repeat": "R2",
+          "physical_xml_sha256": "08fb806163332b689f331b298cbd70589de589c02d557b0385b788ce4da39fa9",
+          "formal_start_sha256": "4e272dd66793e4b901fdcff7cdb1a9c984a8813cf0aa494e83a94961744125c0"
+        },
+        {
+          "source_row": "ROW12_TIERA_JACS3_TEST_R2",
+          "arm": "Full",
+          "repeat": "R2",
+          "physical_xml_sha256": "257eb2c1ba86b3318e3d8713771986bb734d6d8ba1a57eb4ae05c0132a383a30",
+          "formal_start_sha256": "4e272dd66793e4b901fdcff7cdb1a9c984a8813cf0aa494e83a94961744125c0"
+        }
+      ],
+      "files": {
+        "M0": {
+          "path": "inputs/di_NMe/M0.xml",
+          "sha256": "08fb806163332b689f331b298cbd70589de589c02d557b0385b788ce4da39fa9"
+        },
+        "Full": {
+          "path": "inputs/di_NMe/Full.xml",
+          "sha256": "257eb2c1ba86b3318e3d8713771986bb734d6d8ba1a57eb4ae05c0132a383a30"
+        },
+        "geometry": {
+          "path": "inputs/di_NMe/SOLUTE_GEOMETRY_v1.json",
+          "sha256": "1132d55ebdc6bddc2851a9efbc063db9d6ef721f2eb1327e6d68dbc84cbdf438"
+        },
+        "build_report": {
+          "path": "inputs/di_NMe/BUILD_REPORT_v1.json",
+          "sha256": "6ee5da850fb51e786b0011c7b5310522f114e54f850e567f78be4256e3a738f2"
+        },
+        "binding": {
+          "path": "inputs/di_NMe/REVIEWED_TOPOLOGY_BINDING_v1.json",
+          "sha256": "2a11c0f951f69202f9aee746935dd92ee67224538feb86aa32848eb3df6b5e78"
+        },
+        "roe_bounds": {
+          "path": "inputs/di_NMe/roe_bounds.tsv",
+          "sha256": "54c66ffa2fe6f0815264161a0f61f4682af692ae636b4fe61d59ad9083569927"
+        },
+        "R1": {
+          "path": "inputs/di_NMe/R1_initial_replicas.npz",
+          "sha256": "ca5843f78e093abfbb4a41488da440cadfc4b0996d71f8d1a401d16e70da7b2f"
+        },
+        "R2": {
+          "path": "inputs/di_NMe/R2_initial_replicas.npz",
+          "sha256": "4e272dd66793e4b901fdcff7cdb1a9c984a8813cf0aa494e83a94961744125c0"
+        }
+      }
+    },
+    {
+      "system": "tri_NMe",
+      "source_benchmark_id": "TIERA_JACS4",
+      "methylated_residues": [
+        1,
+        2,
+        5
+      ],
+      "solute_particles": 59,
+      "total_particles": 4939,
+      "roe_count": 20,
+      "formal_contracts": [
+        {
+          "source_row": "ROW13_TIERA_JACS4_CONTROL_R1",
+          "arm": "M0",
+          "repeat": "R1",
+          "physical_xml_sha256": "ff286a83199241abd9cf38b42e70fbc633d10fc89b9f1c5f9a646d5e28f31cfc",
+          "formal_start_sha256": "406ab884f4351aac29d26ea5f452689ab36ff206a924d6bbf2603209b49fb828"
+        },
+        {
+          "source_row": "ROW14_TIERA_JACS4_TEST_R1",
+          "arm": "Full",
+          "repeat": "R1",
+          "physical_xml_sha256": "03de1af8aaee6582de98b4c7a33ed21134ae6b474d58faab377c8eeee172ee00",
+          "formal_start_sha256": "406ab884f4351aac29d26ea5f452689ab36ff206a924d6bbf2603209b49fb828"
+        },
+        {
+          "source_row": "ROW15_TIERA_JACS4_CONTROL_R2",
+          "arm": "M0",
+          "repeat": "R2",
+          "physical_xml_sha256": "ff286a83199241abd9cf38b42e70fbc633d10fc89b9f1c5f9a646d5e28f31cfc",
+          "formal_start_sha256": "9130f33e317123855c6206df5ee1828f8236a0a16ed51233e5f12786da4962bf"
+        },
+        {
+          "source_row": "ROW16_TIERA_JACS4_TEST_R2",
+          "arm": "Full",
+          "repeat": "R2",
+          "physical_xml_sha256": "03de1af8aaee6582de98b4c7a33ed21134ae6b474d58faab377c8eeee172ee00",
+          "formal_start_sha256": "9130f33e317123855c6206df5ee1828f8236a0a16ed51233e5f12786da4962bf"
+        }
+      ],
+      "files": {
+        "M0": {
+          "path": "inputs/M0.xml",
+          "sha256": "ff286a83199241abd9cf38b42e70fbc633d10fc89b9f1c5f9a646d5e28f31cfc"
+        },
+        "Full": {
+          "path": "inputs/Full.xml",
+          "sha256": "03de1af8aaee6582de98b4c7a33ed21134ae6b474d58faab377c8eeee172ee00"
+        },
+        "geometry": {
+          "path": "inputs/SOLUTE_GEOMETRY_v1.json",
+          "sha256": "e2b0a7fa2f19cf9e2f32a607d8bc77506de624afb671dd70ce25d0c373b0b5db"
+        },
+        "build_report": {
+          "path": "inputs/tri_NMe_BUILD_REPORT_v1.json",
+          "sha256": "9cdfefe04ab6571ba77072a45be6b3ac7fad6d98cbd0100b0230670484f6f049"
+        },
+        "binding": {
+          "path": "inputs/REVIEWED_TOPOLOGY_BINDING_v1.json",
+          "sha256": "a14638341d8700f81e3203dec8bfde43f5f0ec39a22844b8eee3e5d76d61d207"
+        },
+        "roe_bounds": {
+          "path": "inputs/roe_bounds.tsv",
+          "sha256": "44716d93e6a248774cb3bb3104d6484d449aeb59f52ec3d9377e778ddc69e395"
+        },
+        "R1": {
+          "path": "inputs/R1_initial_replicas.npz",
+          "sha256": "406ab884f4351aac29d26ea5f452689ab36ff206a924d6bbf2603209b49fb828"
+        },
+        "R2": {
+          "path": "inputs/R2_initial_replicas.npz",
+          "sha256": "9130f33e317123855c6206df5ee1828f8236a0a16ed51233e5f12786da4962bf"
+        }
+      }
+    }
+  ]
+}
