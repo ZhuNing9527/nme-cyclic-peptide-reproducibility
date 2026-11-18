@@ -1,0 +1,40 @@
+{
+  "verified_original_script_sha256": "31c3acc564057f6e03baafe0a01f5baa36fee2ce242148f5fcba88c2357faee3",
+  "source_training_sha256": "083a15a2931590d8452be96f1f7886c24f00f1cce93f30c71817b15c6d576ad0",
+  "source_scoring_archive_sha256": "7c1e8b8788029569473c8bad61e316c0b50e60f0328830318ce1f6e729d9341e",
+  "source_scoring_member_sha256": "4a0bfa5232d666383f86d510b2ce38069f6c00562750c2511d6f2b49072ba498",
+  "portable_training_sha256": "48eec6767bd2258d3378e0c255e0d7b9445bb4f77782e2809332ce2b4956d39e",
+  "portable_scoring_sha256": "191b9005727a179f11fc8433d7b77c2d47610ee81bdb37867105242d295f4307",
+  "kept_training_fields": [
+    "state_id",
+    "training_origin",
+    "arm",
+    "budget_new_labels",
+    "arm_acquisition_rank",
+    "phi_deg",
+    "psi_deg",
+    "omega_deg",
+    "absolute_QM_minus_M0_residual_kcal_mol",
+    "label_precision_convention"
+  ],
+  "kept_scoring_fields": [
+    "candidate_id",
+    "validation_rank",
+    "state_id",
+    "phi_deg",
+    "psi_deg",
+    "omega_deg",
+    "observed_R_kcal_mol",
+    "predicted_R_kcal_mol",
+    "low_energy_le_5kcal",
+    "omega_region"
+  ],
+  "units": {
+    "energies": "kcal/mol",
+    "angles": "degrees"
+  },
+  "source_transform": "Select the specified columns without changing value precision. Scoring rows preserve the archived joint and spline prediction records.",
+  "source_catalog": "../provenance/source_archives.json",
+  "historical_snapshot_source_id": "historical_manuscript_snapshot",
+  "scientific_scope": "Matched Fourier fitting and scoring of the capped N-methylalanine fragment"
+}
