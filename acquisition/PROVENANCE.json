@@ -1,0 +1,249 @@
+{
+  "source_origin": {
+    "original_collection_sha256": "96948b6d1ff0d07e2ea523645eff1d0921ecc46d1e180e3e803a7358676e8b49",
+    "label": "Original frozen author source collection; relevant method source is retained in qm/original_method_source_v1.zip"
+  },
+  "path_adaptation": "Original file bytes are unchanged; the portable replay resolves archived absolute names by basename and verifies their frozen hashes.",
+  "files": [
+    {
+      "file": "code/periodic_gp_v1.py",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/05_gp_implementation_precommit/periodic_gp_v1.py",
+      "sha256": "9dac884ab37aa03e45dd9156a9fa4b47adf715d8fc58b6c77057f5db91e54e5c"
+    },
+    {
+      "file": "code/fourier_k2_v1.py",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/08_acquisition_evaluation_precommit/fourier_k2_v1.py",
+      "sha256": "b29da26e24f749c38dcfb7849482115577fa634d16f2527fe04ffdf057c77bb8"
+    },
+    {
+      "file": "data/prediction_index.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/NMEALA_JOINT_BUDGET192_PRELABEL_PREDICTION_INDEX_v1.tsv",
+      "sha256": "6e69cca666783cd49a557ddd57cee7662e9bc6d76913f1fe9995c3d26119d738"
+    },
+    {
+      "file": "data/fit_metadata.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/NMEALA_JOINT_BUDGET192_PRELABEL_FIT_METADATA_v1.tsv",
+      "sha256": "0edd6294ae591a0b340bd73bfa376ca85af43f9bcb28302e968defbaa679210d"
+    },
+    {
+      "file": "data/validation_labels.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/47_internal_validation144_m0/NMEALA_JOINT_INTERNAL_VALIDATION144_144_LABELS_v1.tsv",
+      "sha256": "363aa8d3161c2765b1d44cff81da05db338fdbf6c8a94e0c59c9f860cdc067dd"
+    },
+    {
+      "file": "data/cell_metrics.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/49_internal_validation144_acquisition_evaluation/NMEALA_JOINT_INTERNAL_VALIDATION144_CELL_METRICS_v1.tsv",
+      "sha256": "c9089497c74f9431c7e57f570cd67f4fbca48b27f65020a00c41f675336fbfc5"
+    },
+    {
+      "file": "data/aulc_summary.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/49_internal_validation144_acquisition_evaluation/NMEALA_JOINT_INTERNAL_VALIDATION144_AULC_SUMMARY_v1.tsv",
+      "sha256": "7dabb90c9a88c20bdc1922151a85e628974fedbf47ca5d5aa56990feef24cd2e"
+    },
+    {
+      "file": "data/claim_gate.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/49_internal_validation144_acquisition_evaluation/NMEALA_JOINT_INTERNAL_VALIDATION144_ACQUISITION_CLAIM_GATE_v1.tsv",
+      "sha256": "264c48999afd8030804c35ad6e23ef15a40d7fec727744d5b13a03685af29a0d"
+    },
+    {
+      "file": "data/pointwise_errors.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/49_internal_validation144_acquisition_evaluation/NMEALA_JOINT_INTERNAL_VALIDATION144_POINTWISE_ERRORS_v1.tsv",
+      "sha256": "6495061ad5dd7284aa788ff86f0a903c4f376086d7ae4c8ba98a91ed1ea94509"
+    },
+    {
+      "file": "data/low_energy_membership.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/49_internal_validation144_acquisition_evaluation/NMEALA_JOINT_INTERNAL_VALIDATION144_LOW_ENERGY_MEMBERSHIP_v1.tsv",
+      "sha256": "f6f23d737d9df36d14c1aafcc476f755246463d1099118e98221e1b66b702c07"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_GP_B24_TRAINING_78_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/22_budget96_authoritative_training_registry/NMEALA_JOINT_GP_B24_TRAINING_78_v1.tsv",
+      "sha256": "32e61cc03d71f4ece16f15bbd09b9fe4f1b8cb4d6432a54a8ba0a1b43e18a611"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_GP_B24_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_GP_B24_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "c5e755bdaba361dcfe0cc953738ad6ad542c751a7157842436543e3d07de4c14"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_GP_B24_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_GP_B24_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "72a578478bc9d2f6b0c31ec6e6f6159f4ba9bba08d146e9391a3518a720bebee"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_GP_B48_TRAINING_102_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/22_budget96_authoritative_training_registry/NMEALA_JOINT_GP_B48_TRAINING_102_v1.tsv",
+      "sha256": "7ac383b4d4a99f75b6a450d87151ddd58aa969741a4e656a1189dee375955847"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_GP_B48_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_GP_B48_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "a20b65d639c832d941f8a838b2fb290588a6f5a5cd47e14adc3b4009b6c444a9"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_GP_B48_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_GP_B48_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "cdffcb3052b7853be823255ff33db1fd0350a210caf55afe6b8c5628e7776141"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_GP_B96_TRAINING_150_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/22_budget96_authoritative_training_registry/NMEALA_JOINT_GP_B96_TRAINING_150_v1.tsv",
+      "sha256": "2793ccffc7e1d81632f736d155e4c8225fe44865bbe1e8f08d92298d596d4812"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_GP_B96_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_GP_B96_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "883f881ccf9a360f67d65bf6e4671cf94a3d147d5079025d0723740168662073"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_GP_B96_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_GP_B96_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "c8009ac3a4743068760e7101501fc7f3625577c3524504e10c299c390816a041"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_GP_B192_TRAINING_246_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/42_budget192_authoritative_training_registry/NMEALA_JOINT_GP_B192_TRAINING_246_v1.tsv",
+      "sha256": "962d396b8f12d1f56eae1aee8c68ac5df33aa6c9623bb0676fd59937d5798ef5"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_GP_B192_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_GP_B192_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "7a10dc84408c949c7c3b7e1dde49f7c17131c5005c9e5e755f46e48902caa207"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_GP_B192_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_GP_B192_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "2aa1dc74a7f0aac37362632be28a16a8fcce7feef42e69515980d8f21a3c1681"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_MAXIMIN_B24_TRAINING_78_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/22_budget96_authoritative_training_registry/NMEALA_JOINT_MAXIMIN_B24_TRAINING_78_v1.tsv",
+      "sha256": "47c2829667b07da5dceb2b7d656319592fecc9be478dd42b54edfdfe9026ccc0"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_MAXIMIN_B24_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_MAXIMIN_B24_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "efc74b6176b41f11ac84312f7c7723de3692e9713a9baea3734f849cc057a38e"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_MAXIMIN_B24_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_MAXIMIN_B24_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "38c18b6a6b47d6bf15166d889be59d0192aa260d1259c2a7cfa8f1bf90a05233"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_MAXIMIN_B48_TRAINING_102_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/22_budget96_authoritative_training_registry/NMEALA_JOINT_MAXIMIN_B48_TRAINING_102_v1.tsv",
+      "sha256": "4de9609efa5acee4bec9bb84ce16899a091fd8b6d2a8743290c1fe766a6a0467"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_MAXIMIN_B48_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_MAXIMIN_B48_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "fc966888eea10526e58832f0705225e2a666f8739dead290ee855e5150a3714f"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_MAXIMIN_B48_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_MAXIMIN_B48_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "e11eb251317173800b3190a8efb91ac1d221514d2bece1e88fcb0efc54585e45"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_MAXIMIN_B96_TRAINING_150_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/22_budget96_authoritative_training_registry/NMEALA_JOINT_MAXIMIN_B96_TRAINING_150_v1.tsv",
+      "sha256": "1bcb6b97dc93a0b4de3ed4e141405cf01f401366c8f19fefb463e7a738ebf00e"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_MAXIMIN_B96_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_MAXIMIN_B96_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "0f581b764bbd5ee5782e27ffd90390a1059cbed18556d70cb63f113538e786ee"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_MAXIMIN_B96_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_MAXIMIN_B96_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "4ad45a6f97a0c156b282dd0211fa301b6aecc5ae08e2665b48ddbd252feeeb17"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_MAXIMIN_B192_TRAINING_246_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/42_budget192_authoritative_training_registry/NMEALA_JOINT_MAXIMIN_B192_TRAINING_246_v1.tsv",
+      "sha256": "083a15a2931590d8452be96f1f7886c24f00f1cce93f30c71817b15c6d576ad0"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_MAXIMIN_B192_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_MAXIMIN_B192_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "486279140e33200e04f6364bf06539ab41f6ca5b662d209a44f2c2c47f9b3daf"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_MAXIMIN_B192_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_MAXIMIN_B192_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "2b5a149694f4c6addd11d4feef1c94b4aa3aa16cddb6c4a0727ea2ce4c2fda81"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_RANDOM_B24_TRAINING_78_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/22_budget96_authoritative_training_registry/NMEALA_JOINT_RANDOM_B24_TRAINING_78_v1.tsv",
+      "sha256": "f943b3c5c8d3a1d929f44285b7cd85637680dbbb5d8b4c3ec1cbdf26fe8b32af"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_RANDOM_B24_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_RANDOM_B24_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "a346ba7dedfe010e4bc78382a4c8d366538f9b12c94b90954f4efb4bd42829f3"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_RANDOM_B24_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_RANDOM_B24_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "6ea869987ace82fce1f4868b239ab6ee2fc6d3c1e306dbe0c8b1dea0f39c1084"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_RANDOM_B48_TRAINING_102_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/22_budget96_authoritative_training_registry/NMEALA_JOINT_RANDOM_B48_TRAINING_102_v1.tsv",
+      "sha256": "937d69293b1aa1ce55bc272377b4282b7ed6eb18c876b18d3b5754b42af0303b"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_RANDOM_B48_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_RANDOM_B48_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "38a7d9d1f2593d548d449a0b7110487b9ffa79d4ec25c78b726e28bb0e7f1659"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_RANDOM_B48_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_RANDOM_B48_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "f0fe1e8baf062dcd21513171d9b5d7b056c013e313a028eaa71b91171a399881"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_RANDOM_B96_TRAINING_150_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/22_budget96_authoritative_training_registry/NMEALA_JOINT_RANDOM_B96_TRAINING_150_v1.tsv",
+      "sha256": "9bbbcc04f875e110ec23cc07bb8f6e29290e644128f06bfcb702deb1ae8dd89e"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_RANDOM_B96_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_RANDOM_B96_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "b2c87f4c6a39d334986297960486cd7eca9cf3c76f148ea60323653f7564ebbb"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_RANDOM_B96_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_RANDOM_B96_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "2ee91b56df912f14ff26af5108442e40f1478574faa4ba12979b37090786d7c4"
+    },
+    {
+      "file": "data/training/NMEALA_JOINT_RANDOM_B192_TRAINING_246_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/42_budget192_authoritative_training_registry/NMEALA_JOINT_RANDOM_B192_TRAINING_246_v1.tsv",
+      "sha256": "7fe745bdfa6b3c79ea5b6869240cfc4932d8cfbbae9c6e10f3b2addaecc6cad6"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_RANDOM_B192_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_RANDOM_B192_FOURIER_K2_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "e7d48513f23ed8e87e639d29b5779b76a0a5da2bcd9b15868cd15ee1a0a8f9de"
+    },
+    {
+      "file": "data/predictions/NMEALA_JOINT_RANDOM_B192_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/44_budget192_prelabel_evaluator_predictions/predictions/NMEALA_JOINT_RANDOM_B192_PERIODIC_GP_VALIDATION144_PREDICTIONS_v1.tsv",
+      "sha256": "9f5b72cb99eb53f95ea34692f80f2ebd7cbf8d7cd46ad105718188ed6b20bcaa"
+    },
+    {
+      "file": "archived_drivers/run_budget192_prelabel_24_evaluators_v1.py",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/run_budget192_prelabel_24_evaluators_v1.py",
+      "sha256": "531047817076b113b27bc37ef35df990ec73e8776066dafcd434edf124024ead"
+    },
+    {
+      "file": "archived_drivers/run_internal_validation144_acquisition_evaluation_v1.py",
+      "source_path": "07_nmeala_separability_pilot/13_joint_correction_development/07_acquisition_benchmark_execution/run_internal_validation144_acquisition_evaluation_v1.py",
+      "sha256": "41f6f505829eb24a9e7bcba1277ca2f234f26a229d159d1e4d6becf3ca11e018"
+    }
+  ]
+}

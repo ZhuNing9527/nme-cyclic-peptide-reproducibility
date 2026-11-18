@@ -1,0 +1,5 @@
+cumulative_new_QM_budget	GP_AL_batches_of_24	maximin_states	random_states	evaluation_validation_states	initial_training_seed_states
+24	1	24	24	144	54
+48	2	48	48	144	54
+96	4	96	96	144	54
+192	8	192	192	144	54
