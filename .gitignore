@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+/qm_reproduced/
+/md_reproduced/
+
+/validation_reproduced.json
+/val_rescored/
+/ala_raw_audit.json
+/validation/native_inputs/
