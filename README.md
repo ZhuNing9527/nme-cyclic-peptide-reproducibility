@@ -1,12 +1,10 @@
 # NMe cyclic peptide reproducibility
 
-Repository **v1.5.1**, companion to manuscript **v3.4.5**,
+Reproducibility materials for
 *Separating Backbone and Amide Torsion Effects in N-Methylated Fragments and Cyclic Pentaalanines*.
 
 This repository contains the code, compact numerical data, original input
-records and final figure-reproduction materials for the submission. Scientific
-inputs, coefficients, predictions and repeat-level results are unchanged from
-v1.5.0. The current numerical table/figure map is inside data/Supporting_Data.zip.
+records and final figure-reproduction materials for the submission. The current numerical table/figure map is inside data/Supporting_Data.zip.
 
 ## Submission data
 
@@ -79,7 +77,7 @@ the frozen fitted J slice, reduced title lettering and an open coordinate frame.
 | acquisition/ | Original GP/Fourier modules, 12 training tables, 24 predictions and benchmark replay |
 | md/ | Native models and starting arrays, production/analysis source, derived observables and representative structures |
 | figures/ | Final figure scripts, frozen vector inputs and original manual molecular images |
-| source_data/ | Historical v3.0 numerical bundle retained for source traceability; use data/Supporting_Data.zip for current manuscript numbering |
+| source_data/ | Historical numerical bundle retained for source traceability; use data/Supporting_Data.zip for current manuscript numbering |
 | provenance/ | Original scientific-source identities and source-bundle mappings |
 | docs/ | Reproduction scope and raw-output archive identities |
 
