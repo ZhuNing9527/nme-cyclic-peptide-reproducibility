@@ -1,16 +1,22 @@
-# Reproduction coverage
+# Reproduction scope
 
-| Work | Supplied material | Additional data for a full upstream rerun |
+| Calculation or output | Distributed material | Scope |
 |---|---|---|
-| Fourier parameter fitting | 246 labels, exact fit code, earlier 144-point scores and coefficients | Raw electronic-structure output archive |
-| Independent Ala test | 144 labels, native input/coordinate bundle, predictions, bootstrap and raw-audit code | Original raw-result archive for output-level audit |
-| Retrospective Val transfer | 72 geometries, topology/charges, both reference contrasts, scores and raw-audit code | Original raw-result archive for output-level audit |
-| Acquisition benchmark | Original GP/Fourier modules, input authorities, 12 manifests, 24 predictions, evaluator drivers and compact selection/label source | Original lab layout for historical job-driver execution |
-| Native MD models | Three systems, paired boxed starts, 12 primary-run contracts, original REST2/production source and 71 ROE bindings | Production coordinate archive for ensemble recomputation |
-| Structural analysis | Tri-NMe derived arrays, representative structures, frozen math and original RMSD/PMF/contact/exchange source | Complete production frames for ensemble ROE/contact/Ramachandran recalculation |
-| Figures | Numerical figure-source archive | Approved artwork and full plotting scripts are in the manuscript package |
+| Matched Fourier comparison | 246 frozen labels, fitting code, earlier 144-point scores and coefficients | Numerical fit and score reproduction; full raw electronic-structure outputs are separate |
+| Independent Ala test | 144 labels, native input/coordinate bundle, predictions and bootstrap source | Frozen-model scores and intervals; raw output audit additionally needs the original result archive |
+| Retrospective Val transfer | 72 geometries, topology/charges, both contrasts, predictions and score source | Both published contrasts; raw output audit additionally needs the original result archive |
+| Acquisition benchmark | GP/Fourier source, 12 training tables, 24 predictions, frozen fit parameters and protocol records | Scores, learning curves and frozen-parameter prediction replay |
+| Native MD models | Physical systems, six paired boxed starts, run contracts, original REST2 source and 71 ROE bindings | Static inputs and initial-coordinate checks; no claim to recalculate complete production ensembles from starting coordinates |
+| Tri-NMe populations and RMSD | Six per-frame derived arrays and representative coordinates | Published M2 masks, 30 block counts, RMSD summaries and representative-frame geometry |
+| Whole-ensemble structural analysis | Original contact/ROE/Ramachandran/exchange analysis source and published summary tables | Recalculation from coordinates requires original production trajectories |
+| Final figures and TOC | figures/ scripts, frozen vector panels, numerical inputs and supplied manual molecular images | Approved figure assembly, distance-label refinement, compact panel proportions and TOC rendering; no new QM or MD |
 
-Server collection tools, repair history, stale self-check reports and duplicate
-analysis packages are excluded from this public release. Scientific data and
-numerical implementations remain unchanged; provenance/sources.json records
-the original file identities, including sources consolidated into compact bundles.
+Current table and figure data are in data/Supporting_Data.zip. Native systems,
+starting arrays and protocol records are in data/Simulation_Inputs.zip.
+source_data/Supporting_Data_v3.0.zip is a historical source bundle and does not
+define current manuscript numbering.
+
+Full production trajectories are excluded from GitHub distribution because of
+their size. Full original QM output archives are not included in the compact
+repository. These distribution limits do not make the derived time-series
+arrays equivalent to raw coordinates or raw electronic-structure output files.

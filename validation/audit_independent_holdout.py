@@ -252,7 +252,7 @@ def run(archive, refs, out):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--archive',type=Path,required=True)
-    parser.add_argument('--reference-data',type=Path,default=Path(__file__).resolve().parent/'source_data')
+    parser.add_argument('--reference-data',type=Path,default=Path(__file__).resolve().parent/'data'/'Ala')
     parser.add_argument('--out',type=Path,default=Path('Independent_Holdout_Verification.json'))
     args = parser.parse_args()
     run(args.archive,args.reference_data,args.out)
