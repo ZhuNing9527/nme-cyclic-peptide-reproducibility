@@ -1,19 +1,39 @@
 cff-version: 1.2.0
-message: If you use this reproducibility software and data, please cite this repository.
+message: If you use HighTors software or data, please cite this repository.
 type: software
-title: NMe cyclic peptide reproducibility
+title: HighTors
 authors:
-- name: ZhuNing9527
-  website: https://github.com/ZhuNing9527
+- given-names: Ning
+  family-names: Zhu
+  affiliation: Macao Polytechnic University, Rua de Luís Gonzaga Gomes, Macao, China
+- given-names: Jian Min
+  family-names: Liu
+  affiliation: Institut für Chemie, Technische Universität Berlin, Strasse des 17. Juni 124, 10623 Berlin,
+    Germany
+- given-names: Chongyang
+  family-names: Li
+  affiliation: Macao Polytechnic University, Rua de Luís Gonzaga Gomes, Macao, China
+- given-names: Sen
+  family-names: Cao
+  affiliation: Macao Polytechnic University, Rua de Luís Gonzaga Gomes, Macao, China
+- given-names: Chengyun
+  family-names: Zhang
+  affiliation: Macao Polytechnic University, Rua de Luís Gonzaga Gomes, Macao, China
+- given-names: Jingjing
+  family-names: Guo
+  affiliation: Macao Polytechnic University, Rua de Luís Gonzaga Gomes, Macao, China
+- given-names: Hongliang
+  family-names: Duan
+  affiliation: Macao Polytechnic University, Rua de Luís Gonzaga Gomes, Macao, China
 repository-code: https://github.com/ZhuNing9527/nme-cyclic-peptide-reproducibility
 url: https://github.com/ZhuNing9527/nme-cyclic-peptide-reproducibility
 version: 1.5.1
-abstract: Reproducibility materials for Separating Backbone and Amide Torsion Effects in N-Methylated
-  Fragments and Cyclic Pentaalanines, manuscript v3.4.5. Includes frozen Fourier models, independent
-  Ala and retrospective Val validation, acquisition benchmark records, native simulation inputs,
-  analysis source, numerical figure data, and the final figure-assembly scripts and supplied manual
-  molecular images.
+abstract: 'Reproducibility materials for HighTors: Separating Backbone and Amide Torsion Effects in N-Methylated
+  Fragments and Cyclic Pentaalanines. Includes frozen Fourier models, independent Ala and retrospective
+  Val validation, acquisition benchmark records, native simulation inputs, analysis source, numerical
+  figure data, and the final figure-assembly scripts and supplied manual molecular images.'
 keywords:
+- HighTors
 - N-methylated cyclic peptides
 - torsion correction
 - Fourier models

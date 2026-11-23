@@ -1,6 +1,6 @@
 # Final figure reproduction
 
-These files reproduce the artwork for manuscript v3.4.5. The five-column
+These files reproduce the artwork for the HighTors study. The five-column
 Scheme 1, centered compact Figure 4d and Figure 5d, and supplied manual molecular
 views are retained. Figure 5/S3 distance annotations use 6.5 pt lettering.
 The TOC uses 9 pt Backbone–amide coupling lettering and a smooth numerical

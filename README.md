@@ -1,7 +1,9 @@
-# NMe cyclic peptide reproducibility
+# HighTors
+
+HighTors is a coupled backbone–amide torsion correction for N-methylated peptides.
 
 Reproducibility materials for
-*Separating Backbone and Amide Torsion Effects in N-Methylated Fragments and Cyclic Pentaalanines*.
+*HighTors: Separating Backbone and Amide Torsion Effects in N-Methylated Fragments and Cyclic Pentaalanines*.
 
 This repository contains the code, compact numerical data, original input
 records and final figure-reproduction materials for the submission. The current numerical table/figure map is inside data/Supporting_Data.zip.
@@ -94,3 +96,13 @@ production trajectories. See [docs/reproduction_scope.md](docs/reproduction_scop
 Original state identifiers and source names are preserved inside scientific
 records. CONTROL/OLD denote M0; TEST/NEW denote Full. SHA256SUMS excludes itself
 and .gitignore. Use CITATION.cff for the software citation.
+
+## Authors and funding
+
+Ning Zhu, Jian Min Liu, Chongyang Li, Sen Cao, Chengyun Zhang, Jingjing Guo, Hongliang Duan.
+
+Jian Min Liu: Institut für Chemie, Technische Universität Berlin, Strasse des 17. Juni 124, 10623 Berlin, Germany. All other authors: Macao Polytechnic University, Rua de Luís Gonzaga Gomes, Macao, China.
+
+Corresponding author: Hongliang Duan.
+
+This project was supported by the Macao Science and Technology Development Fund (Grant No. 0029/2025/RIB1) and the internal grant from Macao Polytechnic University (RP/FCA-11/2025).

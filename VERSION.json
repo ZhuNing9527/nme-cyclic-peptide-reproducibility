@@ -1,14 +1,15 @@
 {
-  "companion_manuscript_version": "3.4.5",
   "scope": "Submission-aligned reproducibility materials",
   "scientific_results_changed": false,
   "new_QM_or_MD_launched": false,
   "repository_version": "1.5.1",
   "parent_repository_version": "1.5.0",
-  "companion_manuscript_title": "Separating Backbone and Amide Torsion Effects in N-Methylated Fragments and Cyclic Pentaalanines",
+  "companion_manuscript_title": "HighTors: Separating Backbone and Amide Torsion Effects in N-Methylated Fragments and Cyclic Pentaalanines",
   "figure_reproduction": "figures/build_submission_figures.py",
   "submission_data_archives": [
     "data/Supporting_Data.zip",
     "data/Simulation_Inputs.zip"
-  ]
+  ],
+  "project_name": "HighTors",
+  "corresponding_author": "Hongliang Duan"
 }
