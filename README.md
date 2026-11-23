@@ -1,17 +1,28 @@
 # NMe cyclic peptide reproducibility
 
-**v1.5.0**, companion to manuscript v3.0, *A Backbone-Dependent Torsion Correction
-for N-Methylated Cyclic Pentaalanines*.
+Repository **v1.5.1**, companion to manuscript **v3.4.5**,
+*Separating Backbone and Amide Torsion Effects in N-Methylated Fragments and Cyclic Pentaalanines*.
 
-This release contains the fragment fitting and validation data, original GP
-implementation, native peptide models and starting arrays, structural-analysis
-source, and numerical figure data. Scientific inputs, coefficients, predictions
-and repeat-level data are unchanged from v1.4.1. Server collection tools,
-development/repair history and duplicate analysis packages have been removed.
+This repository contains the code, compact numerical data, original input
+records and final figure-reproduction materials for the submission. Scientific
+inputs, coefficients, predictions and repeat-level results are unchanged from
+v1.5.0. The current numerical table/figure map is inside data/Supporting_Data.zip.
 
-## Reproduce the reported numerical checks
+## Submission data
 
-Use Python 3.10+ and NumPy. From the repository root, choose fresh output paths:
+| File | Contents |
+|---|---|
+| [data/Supporting_Data.zip](data/Supporting_Data.zip) | Current numerical figure data, all 17 table exports, frozen coefficients and predictions, complete Table S5 evidence, QM inputs and available optimized coordinates, representative structures, and six derived tri-NMe time series |
+| [data/Simulation_Inputs.zip](data/Simulation_Inputs.zip) | Physical systems, six original paired starting arrays, protocol records, seeds and original run contracts |
+
+The archives are ready-to-download distributions. Existing qm/, validation/,
+acquisition/ and md/ directories retain the analysis and simulation source and
+their original numerical inputs. Duplicate data in the distributions are
+intentional; SHA256SUMS covers both archives and the working source files.
+
+## Reproduce the numerical results
+
+Use Python 3.10+ and NumPy, and choose fresh output paths:
 
 ```sh
 python -m pip install -r requirements.txt
@@ -23,8 +34,8 @@ python -B md/code/audit_tri_nme.py --out md_reproduced
 python -B md/code/audit_native_inputs.py --out native_inputs_reproduced.json
 ```
 
-These commands use existing labels and coordinates; they do not launch QM or MD.
-The optional GP-prediction replay uses SciPy:
+These commands use existing labels, inputs and derived arrays; they do not launch
+QM or MD. Optional frozen GP/Fourier prediction replay also requires SciPy:
 
 ```sh
 python -m pip install -r acquisition/requirements.txt
@@ -36,49 +47,52 @@ python -B acquisition/reproduce_acquisition_benchmark.py --verify-predictions --
 | Earlier Ala selection set, 144 geometries | Pairwise / joint RMSE 2.291551 / 1.947528 kcal/mol |
 | Independent Ala test, 144 geometries | Pairwise / joint RMSE 2.299531 / 1.999995 kcal/mol |
 | Tri-NMe reference-basin occupancy, M0 / A only / Full | 7.643% / 86.857% / 91.596% |
-| Native-input audit | Three systems, six paired starts and 71 ROE atom bindings |
+| Native-input check | Three systems, six paired starts and 71 ROE atom bindings |
 
 The earlier 144-point set was excluded from coefficient fitting and used for
-representation selection. The independent 144-point test is separate. Val
-transfer uses 72 existing geometries retrospectively; both local-increment and
-common-reference full-correction results are retained in validation/.
+representation selection. The independent test is separate. Val transfer uses
+72 pre-existing geometries retrospectively; both local-increment and
+common-reference full-correction contrasts are retained.
 
-## Contents
+## Reproduce the final figures
+
+The drawing scripts and required frozen vector panels, numerical inputs and
+authors' manual ChimeraX images are in figures/. Follow [figures/README.md](figures/README.md):
+
+```sh
+python -m pip install -r figures/requirements.txt
+python -B figures/build_submission_figures.py --out figure_outputs
+```
+
+The scripts assemble the approved vector panels and manually drawn molecular
+images and plot the frozen numerical values. They do not generate new molecular
+coordinates, perform new sampling or alter population estimates. The TOC uses
+the frozen fitted J slice, reduced title lettering and an open coordinate frame.
+
+## Contents and scope
 
 | Directory | Contents |
 |---|---|
-| qm/ | Frozen 246-label fit, earlier 144-point comparison and compact original label-generation source |
-| validation/ | Independent Ala and retrospective Val inputs, labels, scores, bootstrap and raw-output audit code |
-| acquisition/ | Original GP/Fourier modules, 12 training manifests, 24 predictions and benchmark replay |
-| md/ | M0/Full native systems and starts for mono/di/tri-NMe, tri-NMe A-only reconstruction, REST2 source, derived data and representative structures |
-| source_data/ | Numerical sources for the main and supporting figures |
-| provenance/ | Original scientific-source identities, public aliases and verification summary |
-| docs/ | Data-archive identities and reproduction coverage |
+| data/ | Current submission data distributions |
+| qm/ | Frozen 246-label fit, earlier selection comparison and original label-generation source |
+| validation/ | Independent Ala and retrospective Val inputs, labels, scores and raw-output audit source |
+| acquisition/ | Original GP/Fourier modules, 12 training tables, 24 predictions and benchmark replay |
+| md/ | Native models and starting arrays, production/analysis source, derived observables and representative structures |
+| figures/ | Final figure scripts, frozen vector inputs and original manual molecular images |
+| source_data/ | Historical v3.0 numerical bundle retained for source traceability; use data/Supporting_Data.zip for current manuscript numbering |
+| provenance/ | Original scientific-source identities and source-bundle mappings |
+| docs/ | Reproduction scope and raw-output archive identities |
 
-Within md/, the original production implementation is consolidated in
-production_source_v1.zip. Original RMSD, projected-free-energy, intramolecular
-hydrogen-bond, REST2-diagnostic and M1–M3/ROE analysis sources are retained in
-original_analysis_source_v1.zip. The full frozen di-NMe analysis package is in
-analysis_tools/; earlier overlapping packages were removed. Formal run records
-remain in original_run_records_v1.zip.
+Full production coordinate trajectories are not distributed through GitHub
+because of their size. Derived-run NPZs contain torsion/RMSD observables, not full
+coordinate trajectories. Complete original QM output archives are also outside
+this compact repository; docs/raw_data_archives.tsv identifies the known QM
+archives and records their distribution status.
 
-The original source bundles preserve their source bytes and lab-path guards.
-Their manifests map descriptive public aliases to original file identities.
-Portable reproduction uses the commands above. The OpenMM construction check
-in md/runtime/openmm_static_check.py is optional and requires OpenMM 8.4.0 and
-openmmtools 0.26.0; it constructs force definitions without a Context or dynamics.
+The public package supports the numerical checks described above. Recomputing
+whole-ensemble contact/ROE values directly from coordinates requires the original
+production trajectories. See [docs/reproduction_scope.md](docs/reproduction_scope.md).
 
-## Data and provenance
-
-The six derived-run NPZs contain torsion/RMSD metrics, not complete production
-coordinates. Starting NPZs are exact boxed position/velocity inputs. Full raw
-ORCA outputs and production coordinates require separately supplied archives;
-the known QM archive hashes are in docs/raw_data_archives.tsv. Recomputing
-whole-ensemble ROE/contact averages requires those original production frames.
-Coverage is summarized in docs/reproduction_scope.md.
-
-Original state identifiers and frozen source names remain unchanged inside
-scientific records. provenance/sources.json records their identities and public
-locations. SHA256SUMS covers distributed files except itself and .gitignore.
-Use CITATION.cff for the software citation. No software license or archival DOI
-has been assigned in this prepared release.
+Original state identifiers and source names are preserved inside scientific
+records. CONTROL/OLD denote M0; TEST/NEW denote Full. SHA256SUMS excludes itself
+and .gitignore. Use CITATION.cff for the software citation.
