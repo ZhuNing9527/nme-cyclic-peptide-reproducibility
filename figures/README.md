@@ -1,39 +1,81 @@
-# Final figure reproduction
+# Approved submission artwork
 
-These files reproduce the artwork for the HighTors study. The five-column
-Scheme 1, centered compact Figure 4d and Figure 5d, and supplied manual molecular
-views are retained. Figure 5/S3 distance annotations use 6.5 pt lettering.
-The TOC uses 9 pt Backbone–amide coupling lettering and a smooth numerical
-surface with an open coordinate frame and no dark surface rim.
+The default entry point exports the final figures corresponding to the approved
+submission archive with SHA256
+`cd7344d263b16834303a140e92c74fea2bd2e21bbe8df545b014540616a3b2db`.
+Its input manifest is `publication_assets/manifest.json`.
 
-Install Python dependencies from figures/requirements.txt. The fonts
-Liberation Serif and Liberation Sans must be available to Matplotlib; on
-Debian/Ubuntu these are supplied by the fonts-liberation package.
+## Run
 
-From the repository root:
+From the repository root, using Python 3.10 or later:
 
 ```sh
 python -m pip install -r figures/requirements.txt
 python -B figures/build_submission_figures.py --out figure_outputs
 ```
 
-Output folders are Main/, Supporting/ and TOC/. Main and supporting figures
-have vector PDF, PNG and SVG exports. Continued figures S5/S6 additionally have
-combined PDFs. TOC includes a 600 dpi RGB TIFF at 3.25 by 1.75 inches.
+To export Figure 4 alone, including an outlined SVG:
 
-The composition combines the distributed frozen vector panels and numerical
-tables with the authors' original ChimeraX PNGs. Molecular coordinates and
-view angles are not regenerated or rotated. The original six molecular PNGs
-are in inputs/Figure_6/ and inputs/Figure_S3/. Final label refinement affects
-only the two pre-existing M0 distance labels in the composed figures.
+```sh
+python -B figures/build_submission_figures.py --only Figure_4 --svg --out figure4_output
+```
 
-The frozen inputs/Figure_1 through Figure_7 and Figure_S1 through Figure_S8
-folder names retain their source identities. They are assembly inputs, not the
-current manuscript figure numbering; the generated Main/ and Supporting/
-folders use current numbering. Numerical data and the current figure/table
-mapping are also distributed in ../data/Supporting_Data.zip.
+Outputs are in `Main/`, `Supporting/`, and `TOC/`. The complete build writes 18
+individual figure PDFs, two additional combined PDFs for continued Figures S5/S6,
+PNG files, the approved TOC TIFF and `artwork_build.json`. Vector-master PNGs are
+rendered at 600 dpi by default (`--dpi` changes this). The 600 dpi TOC PNG uses
+the approved TIFF pixels exactly. Supporting PNGs are copied
+at their native resolution without interpolation. `--only` can be repeated.
+`--svg` is optional; supporting SVGs embed their original raster images.
 
-TOC/amide_correction_slice.tsv is the unchanged 151 by 151 fitted J(phi,omega)
-grid at psi = 40 degrees. This local energy correction is not a cyclic-peptide
-free-energy surface. The script plots the grid numerically; no image-generation
-service, new fit, QM calculation, MD trajectory or density estimate is used.
+## Current layout
+
+All main figures retain the approved embedded Arial fonts. Their canvas width
+is 491.76 pt. Panel letters/titles use the approved 9 pt hierarchy; the Scheme 1
+step titles are also 9 pt. Mathematical symbols and unit superscripts are retained.
+No externally installed font or redistributed font file is needed for export.
+
+Figure 4 has panels a-c above the two-column d/e and f/g rows. The top letters
+have the following page coordinates (points, measured from the upper left):
+
+| Letter | x | Baseline y | Alignment |
+|---|---:|---:|---|
+| a | 12.00000 | 14.00000 | Shared left margin with d/f |
+| b | 189.65544 | 14.00000 | Left edge of the A-only map |
+| c | 319.80792 | 14.00000 | Left edge of the Full map |
+
+`publication_artwork.py` anchors these three text matrices while preserving the
+existing embedded CID glyphs and all plotted content. It does not distribute
+labels at equal intervals from the outer margin. The 25 Figure 4g cells use the
+equal-repeat Full-minus-A-only differences from Table S11; the primary 30-degree
+amide/45-degree backbone cell is 4.739 pp, displayed as +4.74. The tab-separated
+export retains the R1/R2 values at the displayed precision of that SI table.
+
+Figure 5 preserves the revised single row of b/c/d panels and the undistorted
+circle/diamond markers. The model headings retain 9 pt lettering. TOC lettering
+is at least 5.5 pt, and the 40-degree slice label retains its degree sign.
+
+The export validates source hashes, Figure 4 label positions and all 25 heatmap
+values, Figure 5 b/c marker proportions, the common main-figure width, and TOC
+minimum font size and degree sign. It fails if these checks do not pass.
+
+## Sources and reproduction scope
+
+`publication_assets/Main/` and `publication_assets/TOC/TOC_Graphic.pdf` contain
+the approved vector compositions, including the authors' unchanged molecular
+views. `publication_assets/Supporting/` contains the original high-resolution
+PNGs from the approved SI Word document. They are exported to PDFs at the physical
+sizes recorded in the manifest, without replacing the raster artwork with a
+claimed vector reconstruction. The approved TOC TIFF is preserved byte for byte.
+
+This entry point reproduces the approved final artwork from supplied masters;
+it does not claim to replot every scientific panel from raw data. It changes
+no energies, populations, coordinates or sampling. Numerical recalculation is
+covered by the repository's qm/, validation/, acquisition/ and md/ workflows.
+
+The earlier scripts, frozen vector panels, numerical inputs and manual ChimeraX
+images remain in their original paths. The previous submission-assembly entry
+point is preserved as `build_legacy_submission.py`; its output has historical
+fonts/layouts and is not the final submitted artwork. The original source folder
+numbers are retained for traceability. The current numerical figure/table mapping
+is in `../data/Supporting_Data.zip`.
